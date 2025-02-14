@@ -1,0 +1,37 @@
+[
+  {
+    "id": 0,
+    "pict": "../../public/home/comment1.jpeg",
+    "texto": "Aliquam erat volutpat. Nam ante elit, varius dictum quam a, condimentum volutpat turpis. Integer a lorem eget liberoporta elementum.Sed elit elit, ullamcorper.",
+    "nome": "Flora Dantes",
+    "job": "Designer"
+  },
+  {
+    "id": 1,
+    "pict": "../../public/home/comment2.jpeg",
+    "texto": "Nulla molestie quis sem sit amet vehicula. Sed urna nunc, lacinia quis diam in, egestas condimentum libero. Curabitur bibendum vel est at ullamcorper.",
+    "nome": "Eric Sanches",
+    "job": "Advogado"
+  },
+  {
+    "id": 2,
+    "pict": "../../public/home/comment3.jpeg",
+    "texto": "At erat. Nunc venenatis eros nec erat dapibus, et ullamcorper felis dictum. Sed molestie bibendum leo id dignissim, non iaculis justo etiam ultr.",
+    "nome": "Phillip Moi",
+    "job": "Programador"
+  },
+  {
+    "id": 3,
+    "pict": "../../public/home/comment4.jpeg",
+    "texto": "Fusce vel diam vulputate nibh vestibulum luctus vel sit amet lorem. In pellentesque tincidunt dapibus, mauris fauci cursus fringilla. Cras quis urna sollicitud.",
+    "nome": "Denise Lohra",
+    "job": "Nutricionista"
+  },
+  {
+    "id": 4,
+    "pict": "../../public/home/comment5.jpeg",
+    "texto": "Morbi pulvinar hendrerit nulla dapibus tempor. Integer vitae pretium lacus. Vestibulum euismod porta sapien, vel porttitor arcu rutrum id. Integer maximus i.",
+    "nome": "Cintia Muun",
+    "job": "Modelo"
+  }
+]
