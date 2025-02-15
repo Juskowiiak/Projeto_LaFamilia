@@ -5,6 +5,8 @@ export const Title = styled.h5`
   margin-bottom: 3px;
   position: relative;
   display: inline-block;
+  font-family: "Montserrat", serif;
+  font-weight: 300;
   &::after {
     position: absolute;
     content: "";

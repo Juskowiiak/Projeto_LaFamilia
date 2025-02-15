@@ -20,11 +20,12 @@ body {
 }
 p{
   color:var(--main-1);
+  
 }
 img {
   height: 100%;
   width: 100%;
-  border:1px solid cyan;
+ 
 }
 
 

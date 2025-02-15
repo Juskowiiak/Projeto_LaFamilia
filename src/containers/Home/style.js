@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import backgroundPicture from "../../assets/home/back.jpeg";
+import backgroundPicture from "../../assets/home/back.png";
 import "../../Style/cores.css";
 export const Container = styled.div`
   border: 1px solid red;
@@ -26,7 +26,7 @@ export const Container = styled.div`
       left: 0;
       background: linear-gradient(
         180deg,
-        var(--dark-3) 2%,
+        var(--dark-3) 10%,
         transparent 35%,
         transparent 62%,
         var(--dark-3) 100%
@@ -59,7 +59,7 @@ export const Container = styled.div`
         font-size: 2rem;
         color: #fff;
         margin-bottom: 10px;
-        font-family: var(--letra-1);
+        font-family: "Montserrat", serif;
       }
     }
   }
@@ -75,7 +75,6 @@ export const Sections = styled.div`
     display: flex;
     flex-direction: column;
     gap: 5rem;
-
     .section1-card {
       border: 1px solid orange;
       display: flex;
@@ -104,14 +103,17 @@ export const Sections = styled.div`
   }
   /*_____________________________Section-2_____________________________ */
   .section-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 15rem;
     h2 span {
       color: var(--gold-4);
-      text-decoration: underline;
+      font-weight: 400;
     }
     .section2-cards {
       display: flex;
+      background-color: var(--dark-4);
       justify-content: space-between;
-
       .section2-cards-card {
         border: 1px solid blue;
         width: 33.3%;
@@ -125,26 +127,45 @@ export const Sections = styled.div`
         }
         .section2-cards-card-text {
           padding: 1rem;
+          text-align: center;
           p {
             margin-block: 1rem;
+            text-align: left;
           }
           h3 {
             color: var(--gold-2);
+            font-family: "Montserrat", serif;
+            font-weight: 400;
+            text-align: left;
           }
           h5 {
             text-align: center;
             color: var(--gold-4);
+            font-family: "Marck Script", serif;
+            font-weight: 300;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            margin-inline: auto;
+            box-shadow: 1px 1px 4px var(--gold-4);
+            background-color: #000;
+            padding: 0.5rem 1rem;
+            margin-top: 1rem;
           }
         }
         .section2-cards-card-star {
           font-size: 1.9rem;
           margin-bottom: 1.2rem;
           color: var(--gold-3);
+          text-align: left;
         }
       }
     }
+    .section2-cards-card:first-child,
+    .section2-cards-card:last-child {
+      background-color: var(--dark-2);
+    }
     .section2-feedback {
-      margin-top: 5rem;
       border: 1px solid orange;
       overflow-x: scroll;
       padding-bottom: 7rem;
@@ -158,6 +179,7 @@ export const Sections = styled.div`
           position: relative;
           padding: 1rem 1rem 2.4rem 1rem;
           border-radius: 5px;
+          background-color: var(--dark-4);
           .section2-feedback-comments-card-text-icon {
             margin-inline: 10px;
             color: var(--gold-4);
@@ -181,6 +203,12 @@ export const Sections = styled.div`
               h3 {
                 margin-bottom: 1px;
                 color: var(--gold-2);
+                font-family: "Montserrat", serif;
+              }
+              p {
+                font-family: "Montserrat", serif;
+                font-size: 0.6rem;
+                font-size: 300;
               }
             }
           }

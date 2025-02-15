@@ -1,19 +1,22 @@
 import { Container, Sections } from "./style";
-import foodbackgroundPicture from "../../assets/home/food1.jpg";
+//importar imagens
+import foodbackgroundPicture from "../../assets/home/food1.png";
 import viewbackgroundPicture from "../../assets/home/view1.png";
+//importar componentes
+import Titulo from "../../components/Title";
 import TopicLine from "../../components/topic-line";
 import TopicTitle from "../../components/topic-title";
 import TopicSubTitle from "../../components/topic-subtitle";
+//biblica react-icons para usar icons
 import { ImQuotesLeft } from "react-icons/im";
 import { ImQuotesRight } from "react-icons/im";
-//biblica react-icons para usar icons
+import { TbToolsKitchen2 } from "react-icons/tb";
 import { RiStarSFill } from "react-icons/ri";
-//importo o ficheiro json
+//importar ficheiros json
 import Cards from "../../Api/cards.json";
 import Comments from "../../Api/coments.json";
-import Titulo from "../../components/Title";
+
 function Home() {
-  console.log(Cards);
   return (
     <Container>
       <header>
@@ -51,7 +54,7 @@ function Home() {
             <div className="section1-card-info">
               <div className="section1-card-info-title">
                 <TopicTitle>Sobre Nós</TopicTitle>
-                <TopicSubTitle>Temos as melhores vistas</TopicSubTitle>
+                <TopicSubTitle>Desfrute de uma vista deslubrante</TopicSubTitle>
               </div>
               <div className="section1-card-info-text">
                 <p>
@@ -72,7 +75,7 @@ function Home() {
         <section className="section-2">
           <div className="section2-reasons">
             <Titulo>
-              Porquê escolher o <span>nosso Restaurante</span>
+              Porquê escolher o <span>nosso Restaurante ?</span>
             </Titulo>
 
             <ul className="section2-cards">
@@ -93,13 +96,17 @@ function Home() {
                         <RiStarSFill />
                         <RiStarSFill />
                       </div>
-                      <h5>La Familia</h5>
+                      <h5>
+                        La Familia <TbToolsKitchen2 />
+                      </h5>
                     </div>
                   </li>
                 ))}
             </ul>
           </div>
           <div className="section2-feedback">
+            <TopicTitle>Sobre Nós</TopicTitle>
+            <TopicSubTitle>O que falam sobre nós</TopicSubTitle>
             <ul className="section2-feedback-comments">
               {Comments &&
                 Comments.map((item) => (
