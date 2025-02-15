@@ -1,19 +1,19 @@
 [
   {
     "id": 0,
-    "picture": "../../public/home/card3.jpeg",
+    "picture": "/home/card3.jpeg",
     "titulo": "SERVIÇO",
     "texto": "Sed diam turpis, interdum quis tempor sed, tempus nec augue. Praesent maximus orci et felis tempor."
   },
   {
     "id": 1,
-    "picture": "../../public/home/card1.jpg",
+    "picture": "/home/card1.jpg",
     "titulo": "LOCALIZAÇÃO",
     "texto": "Praesent mauris diam, cursus at volutpat at, lobortis quis diam. Nulla elementum, purus a ullamcorper suscipit."
   },
   {
     "id": 2,
-    "picture": "../../public/home/card2.jpeg",
+    "picture": "/home/card2.jpeg",
     "titulo": "PREÇO",
     "texto": "Donec non quam ut lorem posuere aliquam quis at tellus. Sed ultrices sed tortor in convallis."
   }

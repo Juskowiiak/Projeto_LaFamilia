@@ -11,6 +11,7 @@ import { RiStarSFill } from "react-icons/ri";
 //importo o ficheiro json
 import Cards from "../../Api/cards.json";
 import Comments from "../../Api/coments.json";
+import Titulo from "../../components/Title";
 function Home() {
   console.log(Cards);
   return (
@@ -23,6 +24,7 @@ function Home() {
       </header>
       {/*____________________SECTIONS___________________ */}
       <Sections>
+        <Titulo>Sobre Nós</Titulo>
         <section className="section-1">
           <div className="section1-card">
             <div className="section1-card-info">
@@ -69,9 +71,10 @@ function Home() {
         <TopicLine></TopicLine>
         <section className="section-2">
           <div className="section2-reasons">
-            <h2>
+            <Titulo>
               Porquê escolher o <span>nosso Restaurante</span>
-            </h2>
+            </Titulo>
+
             <ul className="section2-cards">
               {/* se o ficheiro Json for verdadeiro ira criar um map */}
               {Cards &&

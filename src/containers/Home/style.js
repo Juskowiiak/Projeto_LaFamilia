@@ -1,8 +1,9 @@
 import styled from "styled-components";
 import backgroundPicture from "../../assets/home/back.jpeg";
+import "../../Style/cores.css";
 export const Container = styled.div`
   border: 1px solid red;
-  background-color: #fff !important;
+  background-color: var(--dark-3);
 
   header {
     width: 100%;
@@ -15,15 +16,21 @@ export const Container = styled.div`
     align-items: center;
     justify-content: center;
     position: relative;
-    &::after {
+
+    &::before {
       position: absolute;
       content: "";
       width: 100%;
       height: 100%;
       top: 0;
       left: 0;
-      background-color: #000;
-      opacity: 0.5;
+      background: linear-gradient(
+        180deg,
+        var(--dark-3) 2%,
+        transparent 35%,
+        transparent 62%,
+        var(--dark-3) 100%
+      );
     }
     .title {
       border: 1px solid blue;
@@ -38,15 +45,21 @@ export const Container = styled.div`
         height: 2px;
         bottom: -20px;
         left: 50%;
-        background-color: red;
+        background-color: #fff;
         transform: translateX(-50%);
       }
       h1 {
-        font-size: 3.4rem;
+        font-size: 4rem;
         letter-spacing: 2px;
+        color: var(--gold-1);
+        text-shadow: 3px 3px 3px #000;
+        font-family: "Marck Script", serif;
       }
       p {
-        font-size: 1.8rem;
+        font-size: 2rem;
+        color: #fff;
+        margin-bottom: 10px;
+        font-family: var(--letra-1);
       }
     }
   }
@@ -54,7 +67,7 @@ export const Container = styled.div`
 export const Sections = styled.div`
   border: 1px solid green;
   position: relative;
-  margin-block: 5rem;
+  margin-block: 8rem;
   width: 80%;
   margin-inline: auto;
   /* _____________________________Section-1_____________________________ */
@@ -62,7 +75,7 @@ export const Sections = styled.div`
     display: flex;
     flex-direction: column;
     gap: 5rem;
-    margin-bottom: 5rem;
+
     .section1-card {
       border: 1px solid orange;
       display: flex;
@@ -91,11 +104,14 @@ export const Sections = styled.div`
   }
   /*_____________________________Section-2_____________________________ */
   .section-2 {
-    margin-top: 5rem;
-
+    h2 span {
+      color: var(--gold-4);
+      text-decoration: underline;
+    }
     .section2-cards {
       display: flex;
       justify-content: space-between;
+
       .section2-cards-card {
         border: 1px solid blue;
         width: 33.3%;
@@ -112,14 +128,18 @@ export const Sections = styled.div`
           p {
             margin-block: 1rem;
           }
+          h3 {
+            color: var(--gold-2);
+          }
           h5 {
             text-align: center;
+            color: var(--gold-4);
           }
         }
         .section2-cards-card-star {
           font-size: 1.9rem;
           margin-bottom: 1.2rem;
-          color: orange;
+          color: var(--gold-3);
         }
       }
     }
@@ -136,10 +156,11 @@ export const Sections = styled.div`
           border: 1px solid blue;
           width: 300px;
           position: relative;
-          padding: 1rem 1rem 2.3rem 1rem;
+          padding: 1rem 1rem 2.4rem 1rem;
           border-radius: 5px;
           .section2-feedback-comments-card-text-icon {
             margin-inline: 10px;
+            color: var(--gold-4);
           }
           .section2-feedback-comments-card-info {
             border: 1px solid red;
@@ -149,7 +170,6 @@ export const Sections = styled.div`
               border: 1px solid cyan;
               height: 60px;
               width: 60px;
-
               margin-bottom: 10px;
               border-radius: 50%;
               img {
@@ -160,6 +180,7 @@ export const Sections = styled.div`
             .section2-feedback-comments-card-info-text {
               h3 {
                 margin-bottom: 1px;
+                color: var(--gold-2);
               }
             }
           }
