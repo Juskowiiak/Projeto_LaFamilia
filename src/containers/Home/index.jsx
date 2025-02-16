@@ -1,21 +1,9 @@
 import { Container, Sections } from "./style";
-//importar imagens
-import foodbackgroundPicture from "../../assets/home/food1.png";
-import viewbackgroundPicture from "../../assets/home/view1.png";
 //importar componentes
-import Titulo from "../../components/Title";
 import TopicLine from "../../components/topic-line";
-import TopicTitle from "../../components/topic-title";
-import TopicSubTitle from "../../components/topic-subtitle";
-//biblica react-icons para usar icons
-import { ImQuotesLeft } from "react-icons/im";
-import { ImQuotesRight } from "react-icons/im";
-import { TbToolsKitchen2 } from "react-icons/tb";
-import { RiStarSFill } from "react-icons/ri";
-//importar ficheiros json
-import Cards from "../../Api/cards.json";
-import Comments from "../../Api/coments.json";
-
+//importar containers
+import HomeSobre from "../../components/Home_Sobre";
+import HomeCards from "../../components/Home_Cards";
 function Home() {
   return (
     <Container>
@@ -25,113 +13,10 @@ function Home() {
           <h1>La Familia</h1>
         </div>
       </header>
-      {/*____________________SECTIONS___________________ */}
       <Sections>
-        <Titulo>Sobre Nós</Titulo>
-        <section className="section-1">
-          <div className="section1-card">
-            <div className="section1-card-info">
-              <div className="section1-card-info-title">
-                <TopicTitle>Sobre Nós</TopicTitle>
-                <TopicSubTitle>Experimente a nossa comida</TopicSubTitle>
-              </div>
-              <div className="section1-card-info-text">
-                <p>
-                  <span>Lorem</span> ipsum dolor sit amet consectetur
-                  adipisicing elit. Tempore excepturi odit optio at suscipit
-                  dignissimos rerum beatae consequatur nam distinctio.
-                </p>
-              </div>
-            </div>
-            <div className="section1-card-picture">
-              <img src={foodbackgroundPicture} title="Nossos pratos" />
-            </div>
-          </div>
-          <div className="section1-card">
-            <div className="section1-card-info-picture">
-              <img src={viewbackgroundPicture} title="Nossas paisagens" />
-            </div>
-            <div className="section1-card-info">
-              <div className="section1-card-info-title">
-                <TopicTitle>Sobre Nós</TopicTitle>
-                <TopicSubTitle>Desfrute de uma vista deslubrante</TopicSubTitle>
-              </div>
-              <div className="section1-card-info-text">
-                <p>
-                  <span>Lorem</span> ipsum dolor sit amet consectetur
-                  adipisicing elit. Tempor uscipit dignissimos rerum beatae
-                  consequatur nam distinctio.
-                </p>
-                <p>
-                  Adipisicing elit. Eligendi, assumenda cupiditate illo officiis
-                  eveniet mollitia! Quasi adipisci vero ipsa molestiae et at
-                  ipsam voluptates accusamus, repudiandae quis cum eos ex.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
+        <HomeSobre />
         <TopicLine></TopicLine>
-        <section className="section-2">
-          <div className="section2-reasons">
-            <Titulo>
-              Porquê escolher o <span>nosso Restaurante ?</span>
-            </Titulo>
-
-            <ul className="section2-cards">
-              {/* se o ficheiro Json for verdadeiro ira criar um map */}
-              {Cards &&
-                Cards.map((item) => (
-                  <li key={item.id} className="section2-cards-card">
-                    <div className="section2-cards-card-picture">
-                      <img src={item.picture} />
-                    </div>
-                    <div className="section2-cards-card-text">
-                      <h3>{item.titulo}</h3>
-                      <p>{item.texto}</p>
-                      <div className="section2-cards-card-star">
-                        <RiStarSFill />
-                        <RiStarSFill />
-                        <RiStarSFill />
-                        <RiStarSFill />
-                        <RiStarSFill />
-                      </div>
-                      <h5>
-                        La Familia <TbToolsKitchen2 />
-                      </h5>
-                    </div>
-                  </li>
-                ))}
-            </ul>
-          </div>
-          <div className="section2-feedback">
-            <TopicTitle>Sobre Nós</TopicTitle>
-            <TopicSubTitle>O que falam sobre nós</TopicSubTitle>
-            <ul className="section2-feedback-comments">
-              {Comments &&
-                Comments.map((item) => (
-                  <li key={item.id} className="section2-feedback-comments-card">
-                    <div className="section2-feedback-comments-card-text">
-                      <p>
-                        <ImQuotesLeft className="section2-feedback-comments-card-text-icon" />
-                        {item.texto}
-                        <ImQuotesRight className="section2-feedback-comments-card-text-icon" />
-                      </p>
-                    </div>
-                    <div className="section2-feedback-comments-card-info">
-                      <div className="section2-feedback-comments-card-info-picture">
-                        <img src={item.pict} title="Cliente" />
-                      </div>
-                      <div className="section2-feedback-comments-card-info-text">
-                        <h3>{item.nome}</h3>
-                        <p>{item.job}</p>
-                      </div>
-                    </div>
-                  </li>
-                ))}
-            </ul>
-          </div>
-        </section>
+        <HomeCards />
       </Sections>
     </Container>
   );
