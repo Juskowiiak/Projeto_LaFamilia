@@ -1,6 +1,6 @@
 //importar biblioteca styled
 import styled from "styled-components";
-//importar file css
+//importar file
 import "../../Style/cores.css";
 import breakpoints from "../../Style/breakpoints";
 
