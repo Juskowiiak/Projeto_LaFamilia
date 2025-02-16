@@ -52,7 +52,7 @@ export default function Footer() {
           Direitos Reservados
         </p>
         <p>
-          Designed by <span>Juskowiak @phonso</span>
+          Designed by <span>Juskowiak@phonso</span>
         </p>
       </div>
     </Container>

@@ -4,6 +4,8 @@ import { Container } from "./style";
 //importar imagem
 import Logo from "../../assets/nav/logo.png";
 import { useState } from "react";
+//importar icons
+import { IoMenu } from "react-icons/io5";
 export default function Navegador() {
   //quando o Navegador antigir certa altura ira mudar de cor
   const [mudarCorNavegador, setMudarCorNavegador] = useState(false);
@@ -18,7 +20,8 @@ export default function Navegador() {
     }
   };
   return (
-    <Container style={{ background: mudarCorNavegador ? "#1a1b1b" : "black" }}>
+    //caso true background #141414
+    <Container style={{ background: mudarCorNavegador ? "#141414" : "black" }}>
       <div className="menu-1">
         <li>
           <Link to="/">Home</Link>
@@ -42,6 +45,9 @@ export default function Navegador() {
         <li>
           <Link to="/reservation">Reservation</Link>
         </li>
+      </div>
+      <div className="menu">
+        <IoMenu />
       </div>
     </Container>
   );

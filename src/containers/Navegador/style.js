@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import "../../Style/cores.css";
+import "../../Style/breakpoints";
+import breakpoints from "../../Style/breakpoints";
 export const Container = styled.ul`
   border: 1px solid blue;
   position: fixed;
@@ -50,6 +52,16 @@ export const Container = styled.ul`
     &:hover::after {
       color: red;
       width: 100%;
+    }
+  }
+  .menu {
+    border: 1px solid red;
+    color: var(--gold-1);
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    display: none;
+    @media ${breakpoints.l} {
     }
   }
 `;

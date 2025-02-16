@@ -20,9 +20,10 @@ export default function HomeSobre() {
             </div>
             <div className="cards-card-info-text">
               <p>
-                <span>Lorem</span> ipsum dolor sit amet consectetur adipisicing
-                elit. Tempore excepturi odit optio at suscipit dignissimos rerum
-                beatae consequatur nam distinctio.
+                <span>Tempore</span> excepturi odit optio at suscipit
+                dignissimos rerum beatae nulla dapibus tempor. Integer vitae
+                pretium lacus. Vestibulum euismod porta sapien, consequatur nam
+                distinctio, ipsum dolor sit amet consectetur adipisicing elit.
               </p>
             </div>
           </div>
@@ -30,10 +31,8 @@ export default function HomeSobre() {
             <img src={foodPicture} title="Nossos pratos" />
           </div>
         </li>
+        {/* ________________Card2__________________ */}
         <li className="cards-card">
-          <div className="cards-card-info-picture">
-            <img src={viewPicture} title="Nossas paisagens" />
-          </div>
           <div className="cards-card-info">
             <div className="cards-card-info-title">
               <TopicTitle>Sobre Nós</TopicTitle>
@@ -46,11 +45,15 @@ export default function HomeSobre() {
                 distinctio.
               </p>
               <p>
-                Adipisicing elit. Eligendi, assumenda cupiditate illo officiis
-                eveniet mollitia! Quasi adipisci vero ipsa molestiae et at ipsam
-                voluptates accusamus, repudiandae quis cum eos ex.
+                <span>Adipisicing</span> elit, eligendi assumenda cupiditate
+                illo officiis eveniet mollitia! Quasi adipisci vero ipsa
+                molestiae et at ipsam voluptates accusamus, repudiandae quis cum
+                eos ex.
               </p>
             </div>
+          </div>
+          <div className="cards-card-picture">
+            <img src={viewPicture} title="Nossas paisagens" />
           </div>
         </li>
       </ul>

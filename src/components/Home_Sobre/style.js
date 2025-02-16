@@ -2,7 +2,8 @@
 import styled from "styled-components";
 //importar file css
 import "../../Style/cores.css";
-
+import "../../Style/breakpoints";
+import breakpoints from "../../Style/breakpoints";
 export const Container = styled.div`
   position: relative;
   width: 100%;
@@ -11,6 +12,12 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     gap: 5rem;
+    .cards-card:last-child {
+      flex-direction: row-reverse;
+      @media ${breakpoints.l} {
+        flex-direction: column-reverse;
+      }
+    }
     .cards-card {
       border: 1px solid orange;
       display: flex;
@@ -27,13 +34,31 @@ export const Container = styled.div`
           flex-direction: column;
           line-height: 1.5rem;
           gap: 10px;
+          span {
+            color: var(--gold-2);
+          }
+          p {
+            @media ${breakpoints.l} {
+              width: 70%;
+              margin-inline: auto;
+            }
+          }
         }
       }
-
-      .section1-card-info-picture {
+      .cards-card-picture {
         border: 1px solid red;
         min-width: 400px;
         height: 340px;
+        @media ${breakpoints.l} {
+          height: 400px;
+          width: auto;
+        }
+      }
+      @media ${breakpoints.l} {
+        flex-direction: column-reverse;
+        p {
+          text-align: center;
+        }
       }
     }
   }

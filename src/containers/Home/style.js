@@ -1,6 +1,11 @@
+//importar biblioteca styled
 import styled from "styled-components";
-import backgroundPicture from "../../assets/home/back.png";
+//importar imagem
+import backgroundPicture from "../../assets/home/back.jpeg";
 import "../../Style/cores.css";
+import "../../Style/breakpoints";
+import breakpoints from "../../Style/breakpoints";
+
 export const Container = styled.div`
   border: 1px solid red;
   background-color: var(--dark-4);
@@ -30,35 +35,10 @@ export const Container = styled.div`
         var(--dark-4) 100%
       );
     }
-    .title {
-      border: 1px solid blue;
-      text-align: center;
-      position: relative;
-      z-index: 2;
-      padding-inline: 5rem;
-      &::after {
-        position: absolute;
-        content: "";
-        width: 100%;
-        height: 2px;
-        bottom: -20px;
-        left: 50%;
-        background-color: #fff;
-        transform: translateX(-50%);
-      }
-      h1 {
-        font-size: 4rem;
-        letter-spacing: 2px;
-        color: var(--gold-1);
-        text-shadow: 3px 3px 3px #000;
-        font-family: "Marck Script", serif;
-      }
-      p {
-        font-size: 2rem;
-        color: #fff;
-        margin-bottom: 10px;
-        font-family: "Montserrat", serif;
-      }
+    .picture {
+      margin-top: 10vh;
+      width: 400px;
+      height: auto;
     }
   }
 `;
@@ -68,4 +48,8 @@ export const Sections = styled.div`
   margin-block: 8rem;
   width: 80%;
   margin-inline: auto;
+  transition: 0.5s;
+  @media ${breakpoints.l} {
+    width: 90%;
+  }
 `;

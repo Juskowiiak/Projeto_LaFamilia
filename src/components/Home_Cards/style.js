@@ -2,13 +2,13 @@
 import styled from "styled-components";
 //importar file css
 import "../../Style/cores.css";
+import breakpoints from "../../Style/breakpoints";
+
 export const Container = styled.div`
   position: relative;
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 15rem;
+  margin-bottom: 20vh;
   .porque {
     border: 1px solid crimson;
     .cards {
@@ -24,6 +24,7 @@ export const Container = styled.div`
           border: 1px solid crimson;
           height: 280px;
           width: 100%;
+          transition: 0.4s;
           img {
             object-fit: cover;
           }
@@ -63,64 +64,20 @@ export const Container = styled.div`
           color: var(--gold-3);
           text-align: left;
         }
+        @media ${breakpoints.l} {
+          width: 340px;
+        }
+      }
+      //___________________________ MediaQuery____________________
+      @media ${breakpoints.l} {
+        flex-wrap: wrap;
+        gap: 80px;
+        justify-content: space-evenly;
       }
     }
     .cards-card:first-child,
     .cards-card:last-child {
       background-color: var(--dark-2);
-    }
-  }
-
-  /* _____________________________FEEDBACK_________________ */
-
-  .feedback {
-    border: 1px solid orange;
-    overflow-x: scroll;
-    padding-bottom: 7rem;
-    .feedback-comments {
-      margin-top: 3rem;
-      display: inline-flex;
-      gap: 30px;
-      .feedback-comments-card {
-        border: 1px solid blue;
-        width: 300px;
-        position: relative;
-        padding: 1rem 1rem 2.4rem 1rem;
-        border-radius: 5px;
-        background-color: var(--dark-2);
-        .feedback-comments-card-text-icon {
-          margin-inline: 10px;
-          color: var(--gold-4);
-        }
-        .feedback-comments-card-info {
-          border: 1px solid red;
-          position: absolute;
-          bottom: -55%;
-          .feedback-comments-card-info-picture {
-            border: 1px solid cyan;
-            height: 60px;
-            width: 60px;
-            margin-bottom: 10px;
-            border-radius: 50%;
-            img {
-              object-fit: cover;
-              border-radius: 50%;
-            }
-          }
-          .feedback-comments-card-info-text {
-            h3 {
-              margin-bottom: 1px;
-              color: var(--gold-2);
-              font-family: "Montserrat", serif;
-            }
-            p {
-              font-family: "Montserrat", serif;
-              font-size: 0.6rem;
-              font-size: 300;
-            }
-          }
-        }
-      }
     }
   }
 `;
