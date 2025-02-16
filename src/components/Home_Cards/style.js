@@ -13,7 +13,7 @@ export const Container = styled.div`
     border: 1px solid crimson;
     .cards {
       display: flex;
-      background-color: var(--dark-3);
+      background-color: var(--dark-5);
       justify-content: space-between;
       border: 1px solid red;
       margin-top: 3rem;
@@ -67,6 +67,9 @@ export const Container = styled.div`
         @media ${breakpoints.l} {
           width: 340px;
         }
+        @media ${breakpoints.s} {
+          width: 300px;
+        }
       }
       //___________________________ MediaQuery____________________
       @media ${breakpoints.l} {
@@ -77,7 +80,7 @@ export const Container = styled.div`
     }
     .cards-card:first-child,
     .cards-card:last-child {
-      background-color: var(--dark-2);
+      background-color: var(--dark-3);
     }
   }
 `;

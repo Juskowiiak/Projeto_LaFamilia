@@ -1,6 +1,6 @@
 const tamanho = {
   xs: "360px",
-  s: "460px",
+  s: "520px",
   m: "760px",
   l: "1180px",
 };
@@ -9,8 +9,8 @@ const tamanho = {
 // exemplo: @media(breakpoints.xs){}
 const breakpoints = {
   xs: `(max-width:${tamanho.xs})`,
-  s: `max-width:${tamanho.s}`,
-  m: `max-width:${tamanho.m}`,
+  s: `(max-width:${tamanho.s})`,
+  m: `(max-width:${tamanho.m})`,
   l: `(max-width:${tamanho.l})`,
 };
 

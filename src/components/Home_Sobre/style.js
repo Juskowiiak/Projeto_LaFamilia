@@ -42,16 +42,28 @@ export const Container = styled.div`
               width: 70%;
               margin-inline: auto;
             }
+            @media ${breakpoints.m} {
+              width: 90%;
+            }
           }
         }
       }
       .cards-card-picture {
-        border: 1px solid red;
         min-width: 400px;
         height: 340px;
+        transition: 0.5s;
         @media ${breakpoints.l} {
           height: 400px;
           width: auto;
+        }
+        @media ${breakpoints.m} {
+          height: 300px;
+          margin-bottom: 1.5rem;
+        }
+        @media ${breakpoints.s} {
+          height: 250px;
+          min-width: 60%;
+          border: 1px solid blue;
         }
       }
       @media ${breakpoints.l} {

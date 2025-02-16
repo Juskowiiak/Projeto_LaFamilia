@@ -3,7 +3,6 @@ import styled from "styled-components";
 //importar imagem
 import backgroundPicture from "../../assets/home/back.jpeg";
 import "../../Style/cores.css";
-import "../../Style/breakpoints";
 import breakpoints from "../../Style/breakpoints";
 
 export const Container = styled.div`
@@ -51,5 +50,8 @@ export const Sections = styled.div`
   transition: 0.5s;
   @media ${breakpoints.l} {
     width: 90%;
+  }
+  @media ${breakpoints.m} {
+    width: 95%;
   }
 `;

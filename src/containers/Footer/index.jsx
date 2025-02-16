@@ -24,7 +24,7 @@ export default function Footer() {
           </div>
           <div className="info-card-text">
             <p>
-              <span>Telefone:</span> +341 123 456 789
+              <span>Telefone:</span> +351 123 456 789
             </p>
             <p>
               <span>Email:</span> lafamiliafood@gmail.com

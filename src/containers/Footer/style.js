@@ -1,5 +1,7 @@
 import styled from "styled-components";
+//importar files
 import "../../Style/cores.css";
+import breakpoints from "../../Style/breakpoints";
 export const Container = styled.div`
   border: 1px solid red;
   width: 100%;
@@ -8,7 +10,7 @@ export const Container = styled.div`
   align-items: center;
   gap: 30px;
   padding: 0.5rem 1rem;
-  background-color: var(--dark-4);
+  background-color: var(--dark-5);
   .info {
     border: 1px solid yellow;
     width: 100%;
@@ -29,12 +31,29 @@ export const Container = styled.div`
         font-weight: 200;
         letter-spacing: 1.3px;
       }
+      .info-card-text {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
       span {
         color: var(--gold-2);
         margin-right: 5px;
       }
+      @media ${breakpoints.m} {
+        width: 240px;
+      }
+    }
+    @media ${breakpoints.m} {
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    @media ${breakpoints.s} {
+      gap: 30px;
     }
   }
+  //_________________________________________Direitos
+
   .rights {
     text-align: center;
     display: flex;

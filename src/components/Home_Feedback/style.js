@@ -3,12 +3,15 @@ import styled from "styled-components";
 import "../../Style/cores.css";
 import breakpoints from "../../Style/breakpoints";
 export const Container = styled.div`
+  position: relative;
   border: 1px solid blue;
   width: 100%;
   height: 100%;
-  position: relative;
+
   overflow-x: scroll;
   padding-bottom: 7rem;
+  .titulo {
+  }
   .comments {
     margin-top: 3rem;
     display: inline-flex;
@@ -24,6 +27,11 @@ export const Container = styled.div`
         margin-inline: 10px;
         color: var(--gold-4);
       }
+      p:first-child {
+        @media ${breakpoints.s} {
+          font-size: 14px;
+        }
+      }
       .comments-card-info {
         border: 1px solid red;
         position: absolute;
@@ -34,9 +42,14 @@ export const Container = styled.div`
           width: 60px;
           margin-bottom: 10px;
           border-radius: 50%;
+          transition: 0.5s;
           img {
             object-fit: cover;
             border-radius: 50%;
+          }
+          @media ${breakpoints.s} {
+            height: 45px;
+            width: 45px;
           }
         }
         .comments-card-info-text {
@@ -44,6 +57,9 @@ export const Container = styled.div`
             margin-bottom: 1px;
             color: var(--gold-2);
             font-family: "Montserrat", serif;
+            @media ${breakpoints.s} {
+              font-size: 0.7rem;
+            }
           }
           p {
             font-family: "Montserrat", serif;
@@ -51,6 +67,10 @@ export const Container = styled.div`
             font-size: 300;
           }
         }
+      }
+      @media ${breakpoints.s} {
+        width: 280px;
+        padding: 1rem 1rem 1.3rem 1rem;
       }
     }
   }

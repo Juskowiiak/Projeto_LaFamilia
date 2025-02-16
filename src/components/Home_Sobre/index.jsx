@@ -20,7 +20,7 @@ export default function HomeSobre() {
             </div>
             <div className="cards-card-info-text">
               <p>
-                <span>Tempore</span> excepturi odit optio at suscipit
+                Tempore excepturi odit <span>optio</span> at suscipit
                 dignissimos rerum beatae nulla dapibus tempor. Integer vitae
                 pretium lacus. Vestibulum euismod porta sapien, consequatur nam
                 distinctio, ipsum dolor sit amet consectetur adipisicing elit.
@@ -45,10 +45,10 @@ export default function HomeSobre() {
                 distinctio.
               </p>
               <p>
-                <span>Adipisicing</span> elit, eligendi assumenda cupiditate
-                illo officiis eveniet mollitia! Quasi adipisci vero ipsa
-                molestiae et at ipsam voluptates accusamus, repudiandae quis cum
-                eos ex.
+                Adipisicing elit, eligendi assumenda cupiditate illo officiis
+                eveniet mollitia! Quasi adipisci vero ipsa molestiae et at ipsam{" "}
+                <span>voluptates accusamus</span> !!! repudiandae quis cum eos
+                ex rolsr.
               </p>
             </div>
           </div>
