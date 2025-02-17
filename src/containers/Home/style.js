@@ -1,7 +1,7 @@
 //importar biblioteca styled
 import styled from "styled-components";
 //importar imagem
-import backgroundPicture from "../../assets/home/back.jpeg";
+import backgroundPicture from "../../assets/home/back.png";
 import "../../Style/cores.css";
 import breakpoints from "../../Style/breakpoints";
 
@@ -40,9 +40,12 @@ export const Container = styled.div`
       width: 400px;
       height: auto;
       @media ${breakpoints.s} {
-        width: 60%;
+        width: 70%;
         margin-top: 0;
       }
+    }
+    @media ${breakpoints.s} {
+      background-size: 115% 100%;
     }
   }
 `;
