@@ -75,6 +75,12 @@ export const Container = styled.div`
             height: 90%;
           }
         }
+        @media ${breakpoints.xs} {
+          img {
+            width: 70%;
+            height: 70%;
+          }
+        }
       }
       @media ${breakpoints.l} {
         flex-direction: column-reverse;

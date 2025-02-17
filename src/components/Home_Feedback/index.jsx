@@ -13,7 +13,7 @@ export default function HomeFeedback() {
     <Container>
       <div className="titulo">
         <TopicTitle>Sobre Nós</TopicTitle>
-        <TopicSubTitle>O que falam sobre o restaurante</TopicSubTitle>
+        <TopicSubTitle>O que falam sobre o LaFamilia</TopicSubTitle>
       </div>
 
       <ul className="comments">

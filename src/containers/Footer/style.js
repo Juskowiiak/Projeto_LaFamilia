@@ -59,6 +59,7 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     gap: 10px;
+
     span {
       font-family: "Marck Script", serif;
       margin-inline: 5px 3px;
@@ -69,6 +70,12 @@ export const Container = styled.div`
       span {
         color: var(--gold-4);
       }
+      @media ${breakpoints.s} {
+        font-size: 8px;
+      }
+    }
+    @media ${breakpoints.s} {
+      font-size: 10px;
     }
   }
 `;

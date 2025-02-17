@@ -15,6 +15,7 @@ export const Container = styled.div`
     color: #fff;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -38,6 +39,10 @@ export const Container = styled.div`
       margin-top: 10vh;
       width: 400px;
       height: auto;
+      @media ${breakpoints.s} {
+        width: 60%;
+        margin-top: 0;
+      }
     }
   }
 `;
