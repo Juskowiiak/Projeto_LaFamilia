@@ -8,4 +8,8 @@ export const Titulo = styled.h2`
   margin-bottom: 8rem;
   font-family: "Montserrat", serif;
   font-weight: 300;
+
+  @media ${breakpoints.s} {
+    margin-top: 4rem;
+  }
 `;

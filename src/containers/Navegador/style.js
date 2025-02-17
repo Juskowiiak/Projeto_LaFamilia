@@ -25,7 +25,7 @@ export const Container = styled.ul`
       position: relative;
       left: 0;
       transform: none;
-      width: auto;
+      width: 60px;
       height: 100%;
       top: 50%;
     }

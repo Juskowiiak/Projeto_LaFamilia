@@ -19,6 +19,7 @@ export const Container = styled.div`
     align-items: center;
     justify-content: center;
     position: relative;
+
     &::before {
       position: absolute;
       content: "";
@@ -33,6 +34,8 @@ export const Container = styled.div`
         transparent 62%,
         var(--dark-4) 100%
       );
+      @media ${breakpoints.s} {
+      }
     }
     .picture {
       margin-top: 10vh;
@@ -45,7 +48,6 @@ export const Container = styled.div`
     }
     @media ${breakpoints.s} {
       background-size: cover;
-      border: 2px solid red;
     }
   }
 `;
