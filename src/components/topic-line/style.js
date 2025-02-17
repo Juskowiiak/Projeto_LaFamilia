@@ -4,13 +4,31 @@ import "../../Style/cores.css";
 import "../../Style/breakpoints";
 import breakpoints from "../../Style/breakpoints";
 export const Linha = styled.div`
-  position: relative;
+  text-align: center;
   width: 70%;
-  background-color: var(--gold-1);
-  height: 0.5px;
   margin-inline: auto;
-  margin-block: 14rem;
-  border-radius: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: var(--gold-1);
+  }
+  .icon {
+    color: var(--gold-1);
+    background-color: var(--dark-4);
+    position: relative;
+    z-index: 2;
+    padding-inline: 5px;
+    font-size: 1.4rem;
+  }
   @media ${breakpoints.l} {
     margin-block: 10rem;
   }

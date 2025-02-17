@@ -1,6 +1,6 @@
 const tamanho = {
   xs: "360px",
-  s: "520px",
+  s: "500px",
   m: "760px",
   l: "1180px",
 };

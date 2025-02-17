@@ -26,8 +26,13 @@ export const Container = styled.div`
       gap: 3rem;
       transition: 0.5s;
       .cards-card-info {
+        border: 3px solid purple;
         .cards-card-info-title {
           margin-bottom: 3rem;
+          @media ${breakpoints.s} {
+            border: 1px solid yellow;
+            margin-bottom: 0rem;
+          }
         }
         .cards-card-info-text {
           display: flex;
@@ -58,12 +63,17 @@ export const Container = styled.div`
         }
         @media ${breakpoints.m} {
           height: 300px;
-          margin-bottom: 1.5rem;
         }
         @media ${breakpoints.s} {
-          height: 250px;
-          min-width: 60%;
           border: 1px solid blue;
+          min-width: 150px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img {
+            width: 90%;
+            height: 90%;
+          }
         }
       }
       @media ${breakpoints.l} {

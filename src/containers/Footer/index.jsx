@@ -19,20 +19,6 @@ export default function Footer() {
         </li>
         <li className="info-card">
           <div className="info-card-title">
-            <LuPhone className="icon" />
-            <h3>Contatos</h3>
-          </div>
-          <div className="info-card-text">
-            <p>
-              <span>Telefone:</span> +351 123 456 789
-            </p>
-            <p>
-              <span>Email:</span> lafamiliafood@gmail.com
-            </p>
-          </div>
-        </li>
-        <li className="info-card">
-          <div className="info-card-title">
             <FiClock className="icon" />
             <h3>Horários</h3>
           </div>
@@ -42,6 +28,20 @@ export default function Footer() {
             </p>
             <p>
               <span>Dom:</span>Fechado
+            </p>
+          </div>
+        </li>
+        <li className="info-card">
+          <div className="info-card-title">
+            <LuPhone className="icon" />
+            <h3>Contatos</h3>
+          </div>
+          <div className="info-card-text">
+            <p>
+              <span>Telefone:</span> +351 123 456 789
+            </p>
+            <p>
+              <span>Email:</span> lafamiliafood@gmail.com
             </p>
           </div>
         </li>

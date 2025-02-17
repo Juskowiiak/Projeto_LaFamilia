@@ -40,9 +40,6 @@ export const Container = styled.div`
         color: var(--gold-2);
         margin-right: 5px;
       }
-      @media ${breakpoints.m} {
-        width: 240px;
-      }
     }
     @media ${breakpoints.m} {
       flex-wrap: wrap;
@@ -50,6 +47,9 @@ export const Container = styled.div`
     }
     @media ${breakpoints.s} {
       gap: 30px;
+    }
+    @media ${breakpoints.xs} {
+      flex-direction: column;
     }
   }
   //_________________________________________Direitos

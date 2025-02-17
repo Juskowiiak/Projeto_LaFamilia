@@ -4,18 +4,19 @@ import "../../Style/cores.css";
 import breakpoints from "../../Style/breakpoints";
 export const Container = styled.div`
   position: relative;
+  top: 0;
+  left: 0;
   border: 1px solid blue;
   width: 100%;
   height: 100%;
-
   overflow-x: scroll;
   padding-bottom: 7rem;
-  .titulo {
-  }
+
   .comments {
     margin-top: 3rem;
     display: inline-flex;
     gap: 30px;
+    border: 1px solid yellow;
     .comments-card {
       border: 1px solid blue;
       width: 300px;
@@ -72,6 +73,9 @@ export const Container = styled.div`
         width: 280px;
         padding: 1rem 1rem 1.3rem 1rem;
       }
+    }
+    @media ${breakpoints.s} {
+      margin-top: 0rem;
     }
   }
 `;

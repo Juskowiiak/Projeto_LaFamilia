@@ -6,7 +6,6 @@ import TopicSubTitle from "../topic-subtitle";
 //importar ficheiros json
 import Motivos from "../../Api/cards.json";
 //importar icons da biblioteca react-icons
-import { TbToolsKitchen2 } from "react-icons/tb";
 import { RiStarSFill } from "react-icons/ri";
 export default function HomeCards() {
   return (
@@ -32,9 +31,7 @@ export default function HomeCards() {
                     <RiStarSFill />
                     <RiStarSFill />
                   </div>
-                  <h5>
-                    La Familia <TbToolsKitchen2 />
-                  </h5>
+                  <h5>La Familia</h5>
                 </div>
               </li>
             ))}

@@ -3,7 +3,8 @@ import styled from "styled-components";
 //importar file
 import "../../Style/cores.css";
 import breakpoints from "../../Style/breakpoints";
-
+//importar icons da biblioteca react-icons
+import { TbToolsKitchen2 } from "react-icons/tb";
 export const Container = styled.div`
   position: relative;
   width: 100%;
@@ -71,11 +72,13 @@ export const Container = styled.div`
           width: 300px;
         }
       }
-      //___________________________ MediaQuery____________________
       @media ${breakpoints.l} {
         flex-wrap: wrap;
         gap: 80px;
         justify-content: space-evenly;
+      }
+      @media ${breakpoints.s} {
+        border: 1px solid blue;
       }
     }
     .cards-card:first-child,

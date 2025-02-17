@@ -10,4 +10,8 @@ export const Subtitle = styled.h2`
   @media ${breakpoints.l} {
     text-align: center;
   }
+  @media ${breakpoints.s} {
+    font-size: 1.2rem;
+    margin-bottom: 5rem;
+  }
 `;

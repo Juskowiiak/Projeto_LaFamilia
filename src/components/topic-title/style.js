@@ -36,4 +36,15 @@ export const Title = styled.h5`
       background-color: var(--gold-3);
     }
   }
+  @media ${breakpoints.s} {
+    font-size: 0.9rem;
+    &::before {
+      width: 80%;
+      left: -100%;
+    }
+    &::after {
+      width: 80%;
+      right: -100%;
+    }
+  }
 `;
