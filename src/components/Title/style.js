@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import "../../Style/cores.css";
+import "../../Style/breakpoints";
+import breakpoints from "../../Style/breakpoints";
 export const Titulo = styled.h2`
   color: var(--gold-2);
   text-align: center;
@@ -10,6 +12,6 @@ export const Titulo = styled.h2`
   font-weight: 300;
 
   @media ${breakpoints.s} {
-    margin-top: 4rem;
+    margin-top: 8rem;
   }
 `;
