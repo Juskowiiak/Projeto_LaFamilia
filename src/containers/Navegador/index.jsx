@@ -10,7 +10,8 @@ import { TiSocialFacebook } from "react-icons/ti";
 import { TiSocialInstagram } from "react-icons/ti";
 import { TiSocialTwitter } from "react-icons/ti";
 //importar ficheiro funcao
-import abrirMenu from "./funcao";
+import abrirMenu from "./abrirMenu";
+import fecharMenu from "./fecharMenu";
 
 export default function Navegador() {
   //quando o Navegador antigir certa altura ira mudar de cor
@@ -30,13 +31,19 @@ export default function Navegador() {
     <Container style={{ background: mudarCorNavegador ? "#141414" : "black" }}>
       <div className="menu-1">
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/" onClick={() => fecharMenu()} className="option">
+            Home
+          </Link>
         </li>
         <li>
-          <Link to="/menu">Menu</Link>
+          <Link to="/menu" onClick={() => fecharMenu()} className="option">
+            Menu
+          </Link>
         </li>
         <li>
-          <Link to="/chefs">Chefs</Link>
+          <Link to="/chefs" onClick={() => fecharMenu()} className="option">
+            Chefs
+          </Link>
         </li>
       </div>
       <div className="picture">
@@ -46,10 +53,18 @@ export default function Navegador() {
       </div>
       <div className="menu-2">
         <li>
-          <Link to="/eventos">Eventos</Link>
+          <Link to="/eventos" onClick={() => fecharMenu()} className="option">
+            Eventos
+          </Link>
         </li>
         <li>
-          <Link to="/reservation">Reservation</Link>
+          <Link
+            to="/reservation"
+            onClick={() => fecharMenu()}
+            className="option"
+          >
+            Reservation
+          </Link>
         </li>
         <li>
           <ul>
