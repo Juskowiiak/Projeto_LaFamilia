@@ -19,18 +19,15 @@ export const Container = styled.div`
       }
     }
     .cards-card {
-      border: 1px solid orange;
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 3rem;
       transition: 0.5s;
       .cards-card-info {
-        border: 3px solid purple;
         .cards-card-info-title {
           margin-bottom: 3rem;
           @media ${breakpoints.s} {
-            border: 1px solid yellow;
             margin-bottom: 0rem;
           }
         }
@@ -65,7 +62,6 @@ export const Container = styled.div`
           height: 300px;
         }
         @media ${breakpoints.s} {
-          border: 1px solid blue;
           min-width: 150px;
           display: flex;
           justify-content: center;

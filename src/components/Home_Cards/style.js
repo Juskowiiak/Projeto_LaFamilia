@@ -11,18 +11,15 @@ export const Container = styled.div`
   height: 100%;
   margin-bottom: 20vh;
   .porque {
-    border: 1px solid crimson;
     .cards {
       display: flex;
       background-color: var(--dark-5);
       justify-content: space-between;
-      border: 1px solid red;
+
       margin-top: 3rem;
       .cards-card {
-        border: 1px solid blue;
         width: 33.3%;
         .cards-card-picture {
-          border: 1px solid crimson;
           height: 280px;
           width: 100%;
           transition: 0.4s;
@@ -76,9 +73,6 @@ export const Container = styled.div`
         flex-wrap: wrap;
         gap: 80px;
         justify-content: space-evenly;
-      }
-      @media ${breakpoints.s} {
-        border: 1px solid blue;
       }
     }
     .cards-card:first-child,

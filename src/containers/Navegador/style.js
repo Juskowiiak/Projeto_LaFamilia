@@ -3,7 +3,6 @@ import "../../Style/cores.css";
 import "../../Style/breakpoints";
 import breakpoints from "../../Style/breakpoints";
 export const Container = styled.ul`
-  border: 1px solid blue;
   position: fixed;
   width: 100%;
   top: 0;
@@ -19,7 +18,7 @@ export const Container = styled.ul`
   .menu-2 {
     display: flex;
     gap: 40px;
-    border: 1px solid yellow;
+
     height: 100%;
     align-items: center;
   }
@@ -55,7 +54,6 @@ export const Container = styled.ul`
     }
   }
   .menu {
-    border: 1px solid red;
     color: var(--gold-1);
     justify-content: center;
     align-items: center;

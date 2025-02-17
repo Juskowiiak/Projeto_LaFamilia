@@ -6,7 +6,7 @@ export const Container = styled.div`
   position: relative;
   top: 0;
   left: 0;
-  border: 1px solid blue;
+
   width: 100%;
   height: 100%;
   overflow-x: scroll;
@@ -16,9 +16,8 @@ export const Container = styled.div`
     margin-top: 3rem;
     display: inline-flex;
     gap: 30px;
-    border: 1px solid yellow;
+
     .comments-card {
-      border: 1px solid blue;
       width: 300px;
       position: relative;
       padding: 1rem 1rem 2.4rem 1rem;
@@ -34,11 +33,9 @@ export const Container = styled.div`
         }
       }
       .comments-card-info {
-        border: 1px solid red;
         position: absolute;
         bottom: -55%;
         .comments-card-info-picture {
-          border: 1px solid cyan;
           height: 60px;
           width: 60px;
           margin-bottom: 10px;

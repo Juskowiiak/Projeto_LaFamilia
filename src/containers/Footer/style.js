@@ -3,7 +3,6 @@ import styled from "styled-components";
 import "../../Style/cores.css";
 import breakpoints from "../../Style/breakpoints";
 export const Container = styled.div`
-  border: 1px solid red;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -12,14 +11,12 @@ export const Container = styled.div`
   padding: 0.5rem 1rem;
   background-color: var(--dark-5);
   .info {
-    border: 1px solid yellow;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding-block: 2rem;
     .info-card {
-      border: 1px solid blue;
       .info-card-title {
         display: flex;
         align-items: center;

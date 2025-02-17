@@ -6,7 +6,6 @@ import "../../Style/cores.css";
 import breakpoints from "../../Style/breakpoints";
 
 export const Container = styled.div`
-  border: 1px solid red;
   background-color: var(--dark-4);
   header {
     width: 100%;
@@ -50,7 +49,6 @@ export const Container = styled.div`
   }
 `;
 export const Sections = styled.div`
-  border: 1px solid green;
   position: relative;
   margin-block: 8rem;
   width: 80%;
