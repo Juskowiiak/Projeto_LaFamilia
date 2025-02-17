@@ -11,6 +11,7 @@ export const Linha = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-block: 18rem;
   &::after {
     position: absolute;
     content: "";
@@ -30,6 +31,6 @@ export const Linha = styled.div`
     font-size: 1.4rem;
   }
   @media ${breakpoints.l} {
-    margin-block: 10rem;
+    margin-block: 14rem;
   }
 `;

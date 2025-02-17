@@ -44,7 +44,8 @@ export const Container = styled.div`
       }
     }
     @media ${breakpoints.s} {
-      background-size: 115% 100%;
+      background-size: cover;
+      border: 2px solid red;
     }
   }
 `;
@@ -59,5 +60,8 @@ export const Sections = styled.div`
   }
   @media ${breakpoints.m} {
     width: 95%;
+  }
+  @media ${breakpoints.s} {
+    margin-block: 0;
   }
 `;

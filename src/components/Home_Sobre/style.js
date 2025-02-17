@@ -85,5 +85,8 @@ export const Container = styled.div`
         }
       }
     }
+    @media ${breakpoints.s} {
+      gap: 10rem;
+    }
   }
 `;

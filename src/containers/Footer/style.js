@@ -10,6 +10,7 @@ export const Container = styled.div`
   gap: 30px;
   padding: 0.5rem 1rem;
   background-color: var(--dark-5);
+
   .info {
     width: 100%;
     display: flex;

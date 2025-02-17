@@ -6,12 +6,11 @@ export const Container = styled.div`
   position: relative;
   top: 0;
   left: 0;
-
   width: 100%;
   height: 100%;
   overflow-x: scroll;
   padding-bottom: 7rem;
-
+  margin-bottom: 3rem;
   .comments {
     margin-top: 3rem;
     display: inline-flex;

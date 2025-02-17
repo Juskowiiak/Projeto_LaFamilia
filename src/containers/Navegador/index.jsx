@@ -6,6 +6,12 @@ import Logo from "../../assets/nav/logo.png";
 import { useState } from "react";
 //importar icons
 import { IoMenu } from "react-icons/io5";
+import { TiSocialFacebook } from "react-icons/ti";
+import { TiSocialInstagram } from "react-icons/ti";
+import { TiSocialTwitter } from "react-icons/ti";
+//importar ficheiro funcao
+import abrirMenu from "./funcao";
+
 export default function Navegador() {
   //quando o Navegador antigir certa altura ira mudar de cor
   const [mudarCorNavegador, setMudarCorNavegador] = useState(false);
@@ -45,8 +51,21 @@ export default function Navegador() {
         <li>
           <Link to="/reservation">Reservation</Link>
         </li>
+        <li>
+          <ul>
+            <li>
+              <TiSocialInstagram className="icons" />
+            </li>
+            <li>
+              <TiSocialFacebook className="icons" />
+            </li>
+            <li>
+              <TiSocialTwitter className="icons" />
+            </li>
+          </ul>
+        </li>
       </div>
-      <div className="menu">
+      <div className="Btn" onClick={() => abrirMenu()}>
         <IoMenu />
       </div>
     </Container>
