@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import "../../Style/cores.css";
-import "../../Style/breakpoints";
 import breakpoints from "../../Style/breakpoints";
 export const Title = styled.h5`
   color: var(--dark-1);
