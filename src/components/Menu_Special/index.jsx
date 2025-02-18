@@ -1,7 +1,7 @@
 import { Container } from "./style";
 import TopicSubTitle from "../topic-subtitle";
 import TopicTitle from "../topic-title";
-
+import pega from "./funcao";
 export default function MenuSpecial() {
   return (
     <Container>
@@ -9,20 +9,20 @@ export default function MenuSpecial() {
       <TopicSubTitle>A Especialidade da casa</TopicSubTitle>
       <div className="special">
         <ul className="special-option">
-          <li>
-            <a href="#">Prato1</a>
+          <li className="optionMenu active" onClick={() => pega()}>
+            Prato1
           </li>
-          <li>
-            <a href="#">Prato2</a>
+          <li className="optionMenu" onClick={() => pega()}>
+            Prato2
           </li>
-          <li>
-            <a href="#">Prato3</a>
+          <li className="optionMenu" onClick={() => pega()}>
+            Prato3
           </li>
-          <li>
-            <a href="#">Prato4</a>
+          <li className="optionMenu" onClick={() => pega()}>
+            Prato4
           </li>
-          <li>
-            <a href="#">Prato5</a>
+          <li className="optionMenu" onClick={() => pega()}>
+            Prato5
           </li>
         </ul>
         <div className="special-info">

@@ -1,0 +1,242 @@
+[
+  {
+    "id": 0,
+    "tipo": "bebida",
+    "nome": "Garrafa de água",
+    "info": "",
+    "preco": 6.5,
+    "picture": "./menu/bebida1.jpg"
+  },
+  {
+    "id": 1,
+    "tipo": "bebida",
+    "nome": "Refrigerantes",
+    "info": "",
+    "preco": 6.5,
+    "picture": "./menu/bebida2.jpg"
+  },
+  {
+    "id": 2,
+    "tipo": "bebida",
+    "nome": "Taça de Vinho",
+    "info": "",
+    "preco": 6.5,
+    "picture": "./menu/bebida3.jpg"
+  },
+  {
+    "id": 3,
+    "tipo": "bebida",
+    "nome": "Copo de cerveja",
+    "info": "",
+    "preco": 6.5,
+    "picture": "./menu/bebida4.jpg"
+  },
+  {
+    "id": 4,
+    "tipo": "bebida",
+    "nome": "Jarro de sangria",
+    "info": "",
+    "preco": 6.5,
+    "picture": "./menu/bebida5.jpg"
+  },
+  {
+    "id": 5,
+    "tipo": "bebida",
+    "nome": "Lincor",
+    "info": "",
+    "preco": 6.5,
+    "picture": "./menu/bebida1.jpg"
+  },
+  {
+    "id": 6,
+    "tipo": "entrada",
+    "nome": "Aros de cebola",
+    "info": "c/molho ketchup/maionese",
+    "preco": 6.5,
+    "picture": "./menu/entrada1.jpg"
+  },
+  {
+    "id": 7,
+    "tipo": "entrada",
+    "nome": "Chamuças",
+    "info": "",
+    "preco": 6.5,
+    "picture": "./menu/entrada2.jpg"
+  },
+  {
+    "id": 8,
+    "tipo": "entrada",
+    "nome": "Gyozas de frango",
+    "info": "",
+    "preco": 6.5,
+    "picture": "./menu/entrada3.jpg"
+  },
+  {
+    "id": 9,
+    "tipo": "entrada",
+    "nome": "Torradas com pate de atum",
+    "info": "",
+    "preco": 6.5,
+    "picture": "./menu/entrada4.jpg"
+  },
+  {
+    "id": 10,
+    "tipo": "entrada",
+    "nome": "Canapes de salame",
+    "info": "",
+    "preco": 6.5,
+    "picture": "./menu/entrada5.jpg"
+  },
+  {
+    "id": 11,
+    "tipo": "grupo",
+    "nome": "Pizza",
+    "info": "Ananás, Barbecue, Atum, 4 Queijos...",
+    "preco": 6.5,
+    "picture": "./menu/grupo1.jpg"
+  },
+  {
+    "id": 12,
+    "tipo": "grupo",
+    "nome": "Nachos",
+    "info": "Molho Cheddar ou Tomate",
+    "preco": 6.5,
+    "picture": "./menu/grupo2.jpg"
+  },
+  {
+    "id": 13,
+    "tipo": "grupo",
+    "nome": "Shrimp and Sausage Boil",
+    "info": "Milho, Salsicha, Batata e Camarão cozidos",
+    "preco": 6.5,
+    "picture": "./menu/grupo3.jpg"
+  },
+  {
+    "id": 14,
+    "tipo": "grupo",
+    "nome": "Macaroni Cheese c/bacon",
+    "info": "",
+    "preco": 6.5,
+    "picture": "./menu/grupo4.jpg"
+  },
+  {
+    "id": 15,
+    "tipo": "prato",
+    "nome": "Salmão grelhado",
+    "info": "",
+    "preco": 6.5,
+    "picture": "./menu/prato1.jpg"
+  },
+  {
+    "id": 16,
+    "tipo": "prato",
+    "nome": "Feijoada",
+    "info": "",
+    "preco": 6.5,
+    "picture": "./menu/prato2.jpg"
+  },
+  {
+    "id": 17,
+    "tipo": "prato",
+    "nome": "Jardineira de vitela",
+    "info": "",
+    "preco": 6.5,
+    "picture": "./menu/prato3.jpg"
+  },
+  {
+    "id": 18,
+    "tipo": "prato",
+    "nome": "Francesinha",
+    "info": "",
+    "preco": 6.5,
+    "picture": "./menu/prato4.jpg"
+  },
+  {
+    "id": 19,
+    "tipo": "prato",
+    "nome": "Esparguete a bolonhesa ",
+    "info": "",
+    "preco": 6.5,
+    "picture": "./menu/prato5.jpg"
+  },
+  {
+    "id": 20,
+    "tipo": "prato",
+    "nome": "Arroz de Polvo",
+    "info": "",
+    "preco": 6.5,
+    "picture": "./menu/prato6.jpg"
+  },
+  {
+    "id": 21,
+    "tipo": "prato",
+    "nome": "Arroz de Pato",
+    "info": "",
+    "preco": 6.5,
+    "picture": "./menu/prato7.jpg"
+  },
+  {
+    "id": 22,
+    "tipo": "prato",
+    "nome": "Puré c/almôndega",
+    "info": "",
+    "preco": 6.5,
+    "picture": "./menu/prato8.jpg"
+  },
+  {
+    "id": 23,
+    "tipo": "prato",
+    "nome": "Bacalhaú com natas",
+    "info": "",
+    "preco": 6.5,
+    "picture": "./menu/prato9.jpg"
+  },
+  {
+    "id": 24,
+    "tipo": "prato",
+    "nome": "Caril de frango",
+    "info": "",
+    "preco": 6.5,
+    "picture": "./menu/prato10.jpg"
+  },
+  {
+    "id": 25,
+    "tipo": "sobremesa",
+    "nome": "Panna Cotta",
+    "info": "Frutos vermelhos, Lima",
+    "preco": 6.5,
+    "picture": "./menu/sobremesa1.jpg"
+  },
+  {
+    "id": 26,
+    "tipo": "sobremesa",
+    "nome": "Mousse de oreo",
+    "info": "",
+    "preco": 6.5,
+    "picture": "./menu/sobremesa2.jpg"
+  },
+  {
+    "id": 27,
+    "tipo": "sobremesa",
+    "nome": "Salada de frutas",
+    "info": "",
+    "preco": 6.5,
+    "picture": "./menu/sobremesa3.jpg"
+  },
+  {
+    "id": 28,
+    "tipo": "sobremesa",
+    "nome": "Pudim",
+    "info": "de leite condensado",
+    "preco": 6.5,
+    "picture": "./menu/sobremesa4.jpg"
+  },
+  {
+    "id": 29,
+    "tipo": "sobremesa",
+    "nome": "Tarte de lima",
+    "info": "",
+    "preco": 6.5,
+    "picture": "./menu/sobremesa5.jpg"
+  }
+]
