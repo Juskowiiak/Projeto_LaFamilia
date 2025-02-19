@@ -6,9 +6,10 @@ import "../../Style/cores.css";
 export const Container = styled.div`
   border: 1px solid cyan;
   position: relative;
-  width: 100%;
+  width: 80%;
   height: 100%;
-
+  margin-inline: auto;
+  transition: 0.5s;
   .menu-options {
     margin-block: 5rem 3rem;
     border: 1px solid blue;
@@ -77,5 +78,8 @@ export const Container = styled.div`
         margin-top: 8px;
       }
     }
+  }
+  @media ${breakpoints.l} {
+    width: 95%;
   }
 `;

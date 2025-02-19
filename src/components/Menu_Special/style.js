@@ -7,8 +7,9 @@ import pict from "../../assets/menu/especialidade/especialidade1.jpg";
 export const Container = styled.div`
   border: 1px solid blue;
   position: relative;
-  width: 100%;
+  width: 80%;
   height: 100%;
+  margin-inline: auto;
 
   .special {
     border: 1px solid orange;
@@ -21,8 +22,9 @@ export const Container = styled.div`
       flex-direction: column;
       justify-content: space-between;
       li {
+        transition: 0.5s;
         border: 1px solid red;
-        border: 1px solid red;
+
         display: block;
         width: 100%;
         color: var(--gold-1);
@@ -30,9 +32,21 @@ export const Container = styled.div`
         font-family: "Montserrat", serif;
         font-weight: 500;
         cursor: pointer;
+        @media ${breakpoints.s} {
+          flex: 1;
+        }
       }
       li.active {
         color: #fff;
+        @media ${breakpoints.s} {
+          flex: 4;
+        }
+      }
+      @media ${breakpoints.l} {
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
       }
     }
     .special-info {
@@ -57,7 +71,31 @@ export const Container = styled.div`
         background-size: cover;
         background-position: center;
         box-shadow: 4px 4px 6px #000;
+        @media ${breakpoints.l} {
+          min-width: 320px;
+          min-height: 300px;
+        }
+        @media ${breakpoints.s} {
+          min-width: 280px;
+          min-height: 260px;
+          border: 1px solid red;
+        }
+      }
+      @media ${breakpoints.l} {
+        flex-direction: column-reverse;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
       }
     }
+    @media ${breakpoints.l} {
+      flex-direction: column-reverse;
+      gap: 40px;
+    }
+  }
+  @media ${breakpoints.l} {
+    width: 95%;
   }
 `;
