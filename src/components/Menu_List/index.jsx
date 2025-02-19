@@ -8,21 +8,11 @@ export default function MenuList() {
       <TopicTitle>Ementa</TopicTitle>
       <TopicSubTitle>Veja os nosso pratos deleciosos</TopicSubTitle>
       <ul className="menu-options">
-        <li className="option">
-          <a href="#">Entrada</a>
-        </li>
-        <li className="option">
-          <a href="#">Prato</a>
-        </li>
-        <li className="option">
-          <a href="#">Bebida</a>
-        </li>
-        <li className="option">
-          <a href="#">Sobremesa</a>
-        </li>
-        <li className="option">
-          <a href="#">Grupo</a>
-        </li>
+        <li className="option active">Entrada</li>
+        <li className="option">Prato</li>
+        <li className="option">Bebida</li>
+        <li className="option">Sobremesa</li>
+        <li className="option">Grupo</li>
       </ul>
       <ul className="ementa">
         <li>

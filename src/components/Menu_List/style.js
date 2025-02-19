@@ -17,20 +17,27 @@ export const Container = styled.div`
     gap: 2rem;
     justify-content: center;
     li {
-      a {
-        color: var(--gold-1);
-        transition: 0.5s;
-        font-family: "Marck Script", serif;
-        font-weight: 300;
-        font-size: 1.4rem;
-
-        &:hover {
-          color: var(--gold-2);
-        }
-        &:active {
-          color: red;
-        }
+      transition: 0.5s;
+      font-family: "Marck Script", serif;
+      font-weight: 300;
+      font-size: 1.4rem;
+      display: flex;
+      color: #fff;
+      cursor: pointer;
+      &:hover {
+        color: var(--gold-2);
       }
+
+      @media ${breakpoints.ml} {
+        font-size: 1.1rem;
+      }
+    }
+    li.active {
+      color: var(--gold-2);
+      text-decoration: underline;
+    }
+    @media ${breakpoints.ml} {
+      gap: 2rem;
     }
   }
   .ementa {
@@ -46,6 +53,7 @@ export const Container = styled.div`
       display: flex;
       justify-content: space-between;
       margin-bottom: 1.3rem;
+      box-shadow: 2px 2px 2px var(--dark-2);
       .info {
         border: 1px solid orange;
         display: flex;
@@ -67,9 +75,12 @@ export const Container = styled.div`
           width: 64px;
           height: 64px;
           border-radius: 50%;
-
           img {
             border-radius: 50%;
+          }
+          @media ${breakpoints.s} {
+            width: 55px;
+            height: 55px;
           }
         }
       }
@@ -77,6 +88,23 @@ export const Container = styled.div`
         color: var(--gold-2);
         margin-top: 8px;
       }
+      @media ${breakpoints.ml} {
+        width: 80%;
+        margin-inline: auto;
+      }
+      @media ${breakpoints.s} {
+        width: 100%;
+        margin-inline: auto;
+      }
+    }
+    @media ${breakpoints.ml} {
+      height: 100vh;
+      border: 3px solid orange;
+      align-items: start;
+      padding-inline: 12px;
+    }
+    @media ${breakpoints.s} {
+      height: 70vh;
     }
   }
   @media ${breakpoints.l} {

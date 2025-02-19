@@ -48,7 +48,7 @@ export default function Navegador() {
       </div>
       <div className="picture">
         <Link to="/">
-          <img src={Logo} />
+          <img src={Logo} title="HomePage" />
         </Link>
       </div>
       <div className="menu-2">
