@@ -13,7 +13,7 @@ export const Container = styled.div`
   .porque {
     .cards {
       display: flex;
-      background-color: var(--dark-5);
+
       justify-content: space-between;
 
       margin-top: 3rem;
@@ -78,6 +78,9 @@ export const Container = styled.div`
     .cards-card:first-child,
     .cards-card:last-child {
       background-color: var(--dark-3);
+    }
+    .cards-card:nth-child(2) {
+      background-color: var(--dark-5);
     }
   }
 `;

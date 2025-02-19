@@ -7,7 +7,7 @@ export const Container = styled.ul`
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 5;
+  z-index: 9;
   display: flex;
   justify-content: space-around;
   height: 10vh;
@@ -28,6 +28,7 @@ export const Container = styled.ul`
       width: 68px;
       height: 100%;
       top: 50%;
+      z-index: 9;
     }
   }
   li {
@@ -115,7 +116,7 @@ export const Container = styled.ul`
     transition: 0.5s;
     @media ${breakpoints.m} {
       position: absolute;
-      z-index: 8;
+      z-index: 5;
       top: 100%;
       background-color: var(--dark-4);
       right: 100%;
