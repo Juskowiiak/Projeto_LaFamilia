@@ -105,7 +105,7 @@ export const Container = styled.div`
       overflow-y: scroll;
     }
     @media ${breakpoints.s} {
-      height: 70vh;
+      height: 50vh;
       padding-top: 0.5rem;
     }
   }
