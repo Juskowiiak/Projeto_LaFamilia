@@ -26,9 +26,14 @@ export const Container = styled.ul`
       left: 0;
       transform: none;
       width: 68px;
-      height: 100%;
+      height: 68px;
       top: 50%;
       z-index: 9;
+    }
+    @media ${breakpoints.s} {
+      top: 59%;
+      width: 52px;
+      height: 52px;
     }
   }
   li {

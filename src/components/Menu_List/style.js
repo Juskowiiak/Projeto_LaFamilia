@@ -4,28 +4,26 @@ import breakpoints from "../../Style/breakpoints";
 import "../../Style/cores.css";
 
 export const Container = styled.div`
-  border: 1px solid cyan;
   position: relative;
   width: 80%;
   height: 100%;
   margin-inline: auto;
   transition: 0.5s;
   .menu-options {
-    margin-block: 5rem 3rem;
-    border: 1px solid blue;
+    margin-block: 6rem 5rem;
     display: flex;
     gap: 2rem;
     justify-content: center;
     li {
-      transition: 0.5s;
       font-family: "Marck Script", serif;
       font-weight: 300;
       font-size: 1.4rem;
       display: flex;
-      color: #fff;
+      color: var(--gold-1);
       cursor: pointer;
       &:hover {
         color: var(--gold-2);
+        text-decoration: underline;
       }
 
       @media ${breakpoints.ml} {
@@ -41,21 +39,24 @@ export const Container = styled.div`
     }
   }
   .ementa {
-    border: 3px solid crimson;
     display: flex;
     flex-wrap: wrap;
-    overflow-y: scroll;
     justify-content: space-between;
+    overflow: none;
     li {
-      border: 1px solid yellow;
       width: 48%;
       height: 80px;
       display: flex;
+      padding-inline-end: 15px;
       justify-content: space-between;
-      margin-bottom: 1.3rem;
-      box-shadow: 2px 2px 2px var(--dark-2);
+      margin-bottom: 1.5rem;
+      box-shadow: 4px 4px 8px var(--dark-5);
+      cursor: pointer;
+      transition: 0.5s;
+      &:hover {
+        transform: scale(1.1);
+      }
       .info {
-        border: 1px solid orange;
         display: flex;
         gap: 15px;
         .info-text {
@@ -67,16 +68,17 @@ export const Container = styled.div`
             font-size: 0.9rem;
           }
           p {
-            font-size: 0.9rem;
+            font-size: 0.7rem;
           }
         }
         .info-picture {
-          border: 3px solid var(--gold-2);
+          border: 2px solid var(--gold-2);
           width: 64px;
           height: 64px;
           border-radius: 50%;
           img {
             border-radius: 50%;
+            object-fit: cover;
           }
           @media ${breakpoints.s} {
             width: 55px;
@@ -93,21 +95,22 @@ export const Container = styled.div`
         margin-inline: auto;
       }
       @media ${breakpoints.s} {
-        width: 100%;
-        margin-inline: auto;
+        width: 95%;
       }
     }
     @media ${breakpoints.ml} {
-      height: 100vh;
-      border: 3px solid orange;
       align-items: start;
       padding-inline: 12px;
+      height: 70vh;
+      overflow-y: scroll;
     }
     @media ${breakpoints.s} {
       height: 70vh;
+      padding-top: 0.5rem;
     }
   }
   @media ${breakpoints.l} {
     width: 95%;
+    overflow: default;
   }
 `;

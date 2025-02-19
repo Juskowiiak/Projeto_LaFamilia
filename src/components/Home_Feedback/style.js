@@ -10,7 +10,7 @@ export const Container = styled.div`
   height: 100%;
   overflow-x: scroll;
   padding-bottom: 7rem;
-  margin-bottom: 3rem;
+  margin-block: 14rem 12rem;
   .comments {
     margin-top: 3rem;
     display: inline-flex;
