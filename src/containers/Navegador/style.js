@@ -34,6 +34,10 @@ export const Container = styled.ul`
       top: 59%;
       width: 52px;
       height: 52px;
+      border: 1px solid red;
+    }
+    @media ${breakpoints.xs} {
+      border: 1px solid blue;
     }
   }
   li {
