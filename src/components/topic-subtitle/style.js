@@ -14,4 +14,8 @@ export const Subtitle = styled.h2`
     font-size: 1.2rem;
     margin-bottom: 4rem;
   }
+  @media ${breakpoints.xs} {
+    font-size: 1rem;
+    margin-bottom: 4rem;
+  }
 `;

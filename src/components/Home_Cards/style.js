@@ -13,9 +13,7 @@ export const Container = styled.div`
   .porque {
     .cards {
       display: flex;
-
       justify-content: space-between;
-
       margin-top: 3rem;
       .cards-card {
         width: 33.3%;
@@ -67,6 +65,9 @@ export const Container = styled.div`
         }
         @media ${breakpoints.s} {
           width: 300px;
+        }
+        @media ${breakpoints.xs} {
+          width: 85%;
         }
       }
       @media ${breakpoints.l} {

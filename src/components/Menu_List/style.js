@@ -14,6 +14,7 @@ export const Container = styled.div`
     display: flex;
     gap: 2rem;
     justify-content: center;
+
     li {
       font-family: "Marck Script", serif;
       font-weight: 300;
@@ -27,15 +28,24 @@ export const Container = styled.div`
       }
 
       @media ${breakpoints.ml} {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
+      }
+      @media ${breakpoints.s} {
+        width: 100px;
+        justify-content: center;
       }
     }
-    li.active {
-      color: var(--gold-2);
-      text-decoration: underline;
+    li:not(:last-child) {
+      @media ${breakpoints.s} {
+        margin-bottom: 1rem;
+      }
     }
     @media ${breakpoints.ml} {
       gap: 2rem;
+    }
+    @media ${breakpoints.s} {
+      flex-wrap: wrap;
+      gap: 0;
     }
   }
   .ementa {
@@ -45,7 +55,7 @@ export const Container = styled.div`
     overflow: none;
     li {
       width: 48%;
-      height: 80px;
+      height: 70px;
       display: flex;
       padding-inline-end: 15px;
       justify-content: space-between;
@@ -66,6 +76,9 @@ export const Container = styled.div`
           .info-text-nome {
             color: var(--gold-2);
             font-size: 0.9rem;
+            @media ${breakpoints.s} {
+              font-size: 0.7rem;
+            }
           }
           p {
             font-size: 0.7rem;
@@ -83,6 +96,10 @@ export const Container = styled.div`
           @media ${breakpoints.s} {
             width: 55px;
             height: 55px;
+          }
+          @media ${breakpoints.s} {
+            width: 42px;
+            height: 42px;
           }
         }
       }

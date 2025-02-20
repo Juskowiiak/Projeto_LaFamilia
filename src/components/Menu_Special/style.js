@@ -56,10 +56,14 @@ export const Container = styled.div`
           color: var(--gold-3);
           letter-spacing: 1.4px;
           text-shadow: 1px 3px 2px #000;
+          @media ${breakpoints.s} {
+            font-size: 1.6rem;
+          }
         }
         p {
           font-family: "Montserrat", serif;
-          font-size: 0.9rem;
+          font-size: 0.8rem;
+          width: 100%;
         }
       }
       .special-info-picture {
@@ -74,8 +78,12 @@ export const Container = styled.div`
           min-height: 300px;
         }
         @media ${breakpoints.s} {
-          max-width: 280px;
-          min-height: 260px;
+          max-width: 60%;
+          min-height: 200px;
+        }
+        @media ${breakpoints.xs} {
+          min-width: 90%;
+          border: 1px solid blue;
         }
       }
       @media ${breakpoints.l} {

@@ -25,19 +25,8 @@ export const Container = styled.ul`
       position: relative;
       left: 0;
       transform: none;
-      width: 68px;
-      height: 68px;
-      top: 50%;
-      z-index: 9;
-    }
-    @media ${breakpoints.s} {
-      top: 59%;
-      width: 52px;
-      height: 52px;
-      border: 1px solid red;
-    }
-    @media ${breakpoints.xs} {
-      border: 1px solid blue;
+      width: auto;
+      height: 100%;
     }
   }
   li {

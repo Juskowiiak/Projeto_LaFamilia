@@ -2,7 +2,6 @@
 import styled from "styled-components";
 //importar file css
 import "../../Style/cores.css";
-import "../../Style/breakpoints";
 import breakpoints from "../../Style/breakpoints";
 export const Container = styled.div`
   position: relative;
@@ -73,7 +72,7 @@ export const Container = styled.div`
         }
         @media ${breakpoints.xs} {
           img {
-            width: 70%;
+            width: 100%;
             height: 70%;
           }
         }

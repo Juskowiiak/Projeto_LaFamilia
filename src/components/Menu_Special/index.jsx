@@ -7,16 +7,22 @@ import TopicTitle from "../topic-title";
 import special from "../../Api/menuSpecial.json";
 //importar funcao
 import busca from "./funcao";
-import picture from "../../../public/menu/especialidade/esp3.jpg";
-import { useState } from "react";
+import picture from "../../assets/menu/esp1.jpg";
+import { useEffect, useState } from "react";
 export default function MenuSpecial() {
   const [pict, setPict] = useState(
     "../../../public/menu/especialidade/esp1.jpg"
   );
+
+  useEffect(() => {
+    console.log("imagem alterada");
+  }, [pict]);
   //sempre que clicarmos nas opcoes, esta funcao é chamada
-  function pega(dado) {
-    busca(dado);
-    setPict(`../../../public/menu/especialidade/esp${dado}.jpg`);
+  function pega(dados) {
+    setPict(`../../assets/menu/esp${dados}.jpg`);
+    busca(dados);
+
+    console.log(dados);
     console.log(pict);
   }
   return (
@@ -47,9 +53,10 @@ export default function MenuSpecial() {
               malesuada elementum, ut fermentum arcu vitae tellus vestib.
             </p>
           </div>
-          <div className="special-info-picture">
-            <img src={pict} />
-          </div>
+          <div
+            className="special-info-picture"
+            style={{ backgroundImage: pict }}
+          ></div>
         </div>
       </div>
     </Container>

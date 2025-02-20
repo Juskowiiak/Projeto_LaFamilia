@@ -21,13 +21,21 @@ export const Container = styled.div`
       .info-card-title {
         display: flex;
         align-items: center;
-        gap: 7px;
+        gap: 10px;
         font-family: "Marck Script", serif;
         font-size: 1.2rem;
         margin-bottom: 0.5rem;
         color: var(--gold-1);
         font-weight: 200;
         letter-spacing: 1.3px;
+        @media ${breakpoints.s} {
+          justify-content: center;
+        }
+        @media ${breakpoints.xs} {
+          font-size: 1rem;
+          text-align: center;
+          justify-content: center;
+        }
       }
       .info-card-text {
         display: flex;
@@ -38,13 +46,16 @@ export const Container = styled.div`
         color: var(--gold-2);
         margin-right: 5px;
       }
+      @media ${breakpoints.s} {
+        text-align: center;
+      }
     }
     @media ${breakpoints.m} {
       flex-wrap: wrap;
       gap: 10px;
     }
     @media ${breakpoints.s} {
-      gap: 30px;
+      gap: 50px;
     }
     @media ${breakpoints.xs} {
       flex-direction: column;

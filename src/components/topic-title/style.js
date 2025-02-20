@@ -46,4 +46,15 @@ export const Title = styled.h5`
       right: -100%;
     }
   }
+  @media ${breakpoints.xs} {
+    font-size: 0.9rem;
+    &::before {
+      width: 60%;
+      left: -70%;
+    }
+    &::after {
+      width: 60%;
+      right: -70%;
+    }
+  }
 `;
