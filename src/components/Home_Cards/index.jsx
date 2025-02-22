@@ -7,6 +7,7 @@ import TopicSubTitle from "../topic-subtitle";
 import Motivos from "../../Api/cards.json";
 //importar icons da biblioteca react-icons
 import { RiStarSFill } from "react-icons/ri";
+
 export default function HomeCards() {
   return (
     <Container>
