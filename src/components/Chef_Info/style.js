@@ -22,10 +22,9 @@ export const Container = styled.div`
   transition: 0.5s;
 
   .painel {
-    border: 2px solid var(--gold-1);
     height: 70vh;
     border-radius: 50px;
-    box-shadow: 2px 2px 2px var(--dark-5);
+    box-shadow: 4px 5px 3px #000;
     color: #fff;
     cursor: pointer;
     flex: 0.3;
@@ -71,7 +70,7 @@ export const Container = styled.div`
           padding: 0.3rem 0.8rem;
           border-radius: 10px;
           display: inline-block;
-          background-color: var(--gold-2);
+          background-color: var(--gold-3);
           text-shadow: 1px 1px 1px #000;
         }
         .job {
@@ -129,7 +128,7 @@ export const Container = styled.div`
       left: 50%;
       transform: translate(-50%, -50%);
       font-family: "Marck Script", serif;
-      color: var(--gold-1);
+      color: var(--gold-2);
       transition: 0.5s;
       text-shadow: 4px 4px 1px #000;
       &:hover {

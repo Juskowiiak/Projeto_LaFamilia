@@ -18,8 +18,11 @@ export default function Chefs() {
         </div>
       </header>
       <Title>Chefs</Title>
-      <TopicTitle>Chefs</TopicTitle>
-      <Subtitle>A nossa cozinha</Subtitle>
+      <div className="titles">
+        <TopicTitle>Chefs</TopicTitle>
+        <Subtitle>A nossa cozinha</Subtitle>
+      </div>
+
       <ChefInfo />
     </Container>
   );

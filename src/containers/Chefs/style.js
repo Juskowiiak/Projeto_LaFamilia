@@ -4,7 +4,6 @@ import "../../Style/cores.css";
 import "../../Style/breakpoints";
 import breakpoints from "../../Style/breakpoints";
 export const Container = styled.div`
-  border: 1px solid red;
   width: 100%;
   height: 100%;
   overflow-x: none;
@@ -20,7 +19,7 @@ export const Container = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 2px 2px 20px var(--gold-4);
+
     &::after {
       position: absolute;
       content: "";
@@ -41,14 +40,23 @@ export const Container = styled.div`
         margin-top: 0.5rem;
         font-family: "Marck Script", serif;
         font-size: 3rem;
+        text-shadow: 4px 4px 2px #000;
         span {
           color: var(--gold-1);
         }
         @media ${breakpoints.m} {
           font-size: 2.2rem;
-          margin-inline: 20px;
+          margin-inline: 30px;
         }
       }
+    }
+  }
+  .titles {
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    @media ${breakpoints.l} {
+      margin-left: 0;
+      margin-bottom: 3rem;
     }
   }
 `;
