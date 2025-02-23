@@ -12,9 +12,12 @@ import { useState } from "react";
 
 export default function MenuSpecial() {
   const [imagem, setImagem] = useState("./menu/especialidade/esp2.jpg");
-  //sempre que clicarmos nas opcoes, esta funcao é chamada
+  //sempre que clicarmos nas opcoes, esta funcao é chamada e ela recebe o id da opcao clicada
   function pega(dados) {
+    // a funcao busca recebe o id e retorna a informacao do id selecionado
     busca(dados);
+    //o mesmo acontece com a imagem que é alterada consoante o id, visto que todas tem o mesmo nome,
+    //o unico fato que muda é a numeracao
     setImagem(`./menu/especialidade/esp${dados}.jpg`);
   }
   return (

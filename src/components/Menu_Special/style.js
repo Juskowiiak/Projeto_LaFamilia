@@ -13,39 +13,45 @@ export const Container = styled.div`
     margin-top: 5rem;
     display: flex;
     .special-option {
-      width: 25%;
+      width: 15%;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       li {
         transition: 0.5s;
-        display: block;
-        width: 100%;
+        display: flex;
+        justify-content: center;
+        width: 80%;
         color: var(--gold-1);
-        transition: 0.5s;
+        transition: 1s;
         font-family: "Montserrat", serif;
         font-weight: 500;
         cursor: pointer;
+        padding: 0.5rem 1rem;
         background-color: var(--dark-5);
+        box-shadow: 0.2px 0.2px 3px var(--gold-1);
+        &:hover {
+          background-color: var(--gold-1);
+          box-shadow: 0.2px 0.2px 3px var(--dark-5);
+          color: var(--dark-5);
+        }
         @media ${breakpoints.s} {
-          flex: 1;
+          width: 120px;
         }
       }
-      li.active {
-        color: #fff;
-        @media ${breakpoints.s} {
-          flex: 4;
-        }
-      }
+
       @media ${breakpoints.l} {
         flex-direction: row;
         justify-content: center;
         width: 100%;
-        text-align: center;
+        gap: 10px;
+      }
+      @media ${breakpoints.s} {
+        flex-wrap: wrap;
       }
     }
     .special-info {
-      width: 75%;
+      width: 85%;
       display: flex;
       .special-info-text {
         padding-inline: 25px;
