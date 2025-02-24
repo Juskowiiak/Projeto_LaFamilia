@@ -1,6 +1,6 @@
 //importar biblioteca styled
 import styled from "styled-components";
-//importar file
+//importar ficheiros
 import "../../Style/cores.css";
 import breakpoints from "../../Style/breakpoints";
 //importar icons da biblioteca react-icons

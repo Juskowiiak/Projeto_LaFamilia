@@ -1,0 +1,35 @@
+[
+  {
+    "id": 0,
+    "titulo": "Festa de Aniversário",
+    "preco": "170€",
+    "inf1": "Ut egestas, diam vel dignissim egestas, eros elit eleifend dui, et eleifend dolor velit quis ante. Nulla ornare augue in mauris sagittis maximus. Maecenas hendrerit augue in enim pulvinar, in molestie urna consectetur.",
+    "inf2": "Praesent sed lacus massa. In hac habitasse platea dictumst. Curabitur vulputate nunc nec mi tincidunt egestas. Morbi sit amet lorem vitae quam iaculis blandit a eu leo. Curabitur ante enim, dignissim at fringilla condimentum, fringilla a orci. Vivamus tempor commodo leo, nec tempor nulla interdum facilisis.",
+    "tp1": "Donec varius, dolor et fringilla aliquam, nisl sem maximus lacuss.",
+    "tp2": "Fusce sed quam ut est consequat aliquet a vel dolor.",
+    "tp3": " Vestibulum id urna finibus, hendrerit mi quis, molestie ligula.",
+    "picture": "../eventos/e1.jpeg"
+  },
+  {
+    "id": 1,
+    "titulo": "Festa Privadas",
+    "preco": "249€",
+    "inf1": "Etiam rutrum quam auctor iaculis vestibulum. Ut a ipsum placerat, posuere orci sagittis, sollicitudin orci. Mauris egestas venenatis justo, ut aliquam velit.",
+    "inf2": "Ut volutpat lacus vitae massa condimentum vulputate. Donec facilisis faucibus convallis. Aenean iaculis egestas laoreet. Sed neque ligula, feugiat sit amet sem in, hendrerit dictum sapien. Nunc in lorem risus. Morbi tempus elit mauris, vitae feugiat dui lobortis ac. ",
+    "tp1": "Mauris sed vehicula mauris. Etiam aliquam efficitur egestas. ",
+    "tp2": "Orci varius natoque penatibus et magnis dis parturient montes.",
+    "tp3": "Aliquam euismod sit amet orci in commodo. Nunc interdum elit ligula.",
+    "picture": "../eventos/e2.jpeg"
+  },
+  {
+    "id": 2,
+    "titulo": "Festa Customizadas",
+    "preco": "90€",
+    "inf1": "Vitae posuere nulla fermentum varius. Sed facilisis ullamcorper neque, feugiat lobortis magna iaculis sit amet. Integer dignissim faucibus felis, id euismod nunc elementum quis. Suspendisse maximus dictum laoreet. Etiam quis ultricies nisi, sed pulvinar arcu.",
+    "inf2": "Ut volutpat lacus vitae massa condimentum vulputate. Donec facilisis faucibus convallis. Aenean iaculis egestas laoreet. Sed neque ligula, feugiat sit amet sem in, hendrerit dictum sapien. Nunc in lorem risus. Morbi tempus elit mauris, vitae feugiat dui lobortis ac. ",
+    "tp1": "In mollis erat quam non lacus. Nam vehicula nulla tristique auctor pulvinareu ac era.",
+    "tp2": "Nullam facilisis molestie placerat. Curabitur pharetra enim nec sodales hendrerit.",
+    "tp3": "Etiam pulvinar mi lectus, eget placerat dui efficitur in. Duis laoreet felis telluss.",
+    "picture": "../eventos/e3.jpeg"
+  }
+]
