@@ -9,7 +9,7 @@ export const Container = styled.div`
   height: 100%;
   width: 90%;
   margin-inline: auto;
-  margin-top: 4rem;
+  margin-block: 4rem;
   .slider-wrapper {
     position: relative;
     width: 100%;
