@@ -39,19 +39,19 @@ function info2() {
 }
 function info3() {
   document.querySelector(".special-info-name").innerHTML =
-    "Risoto de Queijo Parmesão";
+    "Strogonoff de Camarão";
   document.querySelector(".special-info-texto").innerHTML =
     "Duis sit amet quam suscipit, consequat eros vitae, mollis ex. Proin nibh leo, accumsan vel lacinia sed, pulvinar ac lorem. Pellentesque quis venenatis ipsum. Nunc eget neque eget ante suscipit sagittis ac non tortor. Morbi rutrum sem nec sapien tempus porta eget elementum eros. Pellentesque consequat, purus sit amet semper tempor.";
 }
 function info4() {
   document.querySelector(".special-info-name").innerHTML =
-    "Risoto de Filé Mignon";
+    "Risoto de Queijo Parmesão";
   document.querySelector(".special-info-texto").innerHTML =
     "Nulla non augue sit amet tellus sagittis faucibus. Nulla facilisi. Morbi viverra tincidunt diam, et lacinia neque mollis nec. Duis nec tincidunt mi, at vulputate augue. Nunc ac congue ante, nec sagittis nisl. Vestibulum at velit mattis, scelerisque arcu at, rhoncus quam, donec risus est";
 }
 function info5() {
   document.querySelector(".special-info-name").innerHTML =
-    "Strogonoff de Camarão";
+    "Risoto de Filé Mignon";
   document.querySelector(".special-info-texto").innerHTML =
     "Aenean mollis nunc non magna sagittis cursus. Suspendisse facilisis purus dolor, lacinia vulputate magna pretium ac. Nulla non augue sit amet tellus sagittis faucibus. Nulla facilisi. Morbi viverra tincidunt diam, et lacinia neque mollis nec Duis, et malesuada fames ac ante ipsum primis in faucibus. Donec bibendum quam eget nisl porttitor dapibus";
 }

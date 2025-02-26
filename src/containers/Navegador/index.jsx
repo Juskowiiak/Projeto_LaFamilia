@@ -63,19 +63,26 @@ export default function Navegador() {
             onClick={() => fecharMenu()}
             className="option"
           >
-            Reservation
+            Reserva
           </Link>
         </li>
         <li>
           <ul>
             <li>
-              <TiSocialInstagram className="icons" />
+              <a href="https://www.instagram.com/" title="Instagram">
+                {" "}
+                <TiSocialInstagram className="icons" />
+              </a>
             </li>
             <li>
-              <TiSocialFacebook className="icons" />
+              <a href="https://www.facebook.com/" title="Facebook">
+                <TiSocialFacebook className="icons" />
+              </a>
             </li>
             <li>
-              <TiSocialTwitter className="icons" />
+              <a href="https://x.com/" title="Twitter">
+                <TiSocialTwitter className="icons" />
+              </a>
             </li>
           </ul>
         </li>

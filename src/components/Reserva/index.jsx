@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Container } from "./style";
 
 export default function Reserva() {
@@ -53,7 +54,20 @@ export default function Reserva() {
 
   return (
     <Container>
-      <form onSubmit={formulario}>
+      {/* este formulario irá para o mail da empresa */}
+      <form
+        onSubmit={formulario}
+        method="POST"
+        action={`https://formsubmit.co/juskoh_96@hotmail.com`}
+        target="_blank"
+      >
+        {/* titulo do email */}
+        <input
+          type="hidden"
+          name="_subject"
+          value="LaFamilia - Reserva Efectuada!"
+        ></input>
+        <input type="hidden" name="LaFamilia"></input>
         <ul className="part1">
           <li className="dado">
             <p>Nome</p>
@@ -62,14 +76,16 @@ export default function Reserva() {
               id="nome"
               maxLength={25}
               placeholder="Introduza seu nome"
+              name="Reservado por"
             ></input>
           </li>
           <li className="dado">
             <p>Email</p>
             <input
-              type="text"
+              type="email"
               id="mail"
               placeholder="Introduza seu email"
+              name="email"
             ></input>
           </li>
           <li className="dado">
@@ -78,7 +94,7 @@ export default function Reserva() {
               type="tel"
               id="movel"
               maxLength={9}
-              placeholder="Introduza seu nome"
+              placeholder="Introduza seu nº"
             ></input>
           </li>
         </ul>
@@ -88,7 +104,10 @@ export default function Reserva() {
             <input
               type="number"
               id="pessoa"
-              placeholder="Introduza nº pessoas"
+              max={20}
+              maxLength={2}
+              placeholder="nº de pessoas"
+              name="Pessoas convidadas"
             ></input>
           </li>
           <li className="dado">
@@ -99,14 +118,29 @@ export default function Reserva() {
               min={"2025-02-24"}
               max={"2025-09-02"}
               placeholder="Introduza a data"
+              name="Data"
             ></input>
           </li>
           <li className="dado">
             <p>Horas</p>
-            <input type="time" id="hora" placeholder="Introduza a hora"></input>
+            <input
+              type="time"
+              id="hora"
+              min="11:00"
+              max="23:00"
+              placeholder="Introduza a hora"
+              name="Hora"
+            ></input>
           </li>
         </ul>
-        <input type="submit" value={"clique"} />
+        <input
+          type="hidden"
+          name="_next"
+          value="http://localhost:5174/marcacao"
+        ></input>
+        {/*ambos os emails empresa/cliente irao receber a notificaçao da reserva */}
+        <input type="hidden" name="_autoresponse" value="Notificação"></input>
+        <input className="botao" type="submit" value={"Enviar"} />
       </form>
     </Container>
   );

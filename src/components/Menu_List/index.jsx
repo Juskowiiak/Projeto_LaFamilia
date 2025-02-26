@@ -23,7 +23,7 @@ export default function MenuList() {
   return (
     <Container>
       <TopicTitle>Ementa</TopicTitle>
-      <TopicSubTitle>Veja os nosso pratos deliciosos</TopicSubTitle>
+      <TopicSubTitle>Veja os nossos pratos deliciosos</TopicSubTitle>
       <ul className="menu-options">
         {/* caso a ficheiro seja true, lê o array */}
         {menuOption &&

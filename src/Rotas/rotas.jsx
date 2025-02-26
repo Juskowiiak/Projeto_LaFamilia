@@ -6,6 +6,7 @@ import Chefs from "../containers/Chefs";
 import Eventos from "../containers/Eventos";
 import Reservation from "../containers/Reservation";
 import Navegador from "../containers/Navegador";
+import Marcacao from "../containers/Marcacao";
 import Footer from "../containers/Footer";
 //estas serao as rotas da pagina
 export default function Rotas() {
@@ -17,6 +18,7 @@ export default function Rotas() {
         <Route path="/menu" element={<Menu />} />
         <Route path="/chefs" element={<Chefs />} />
         <Route path="/eventos" element={<Eventos />} />
+        <Route path="/marcacao" element={<Marcacao />} />
         <Route path="/reservation" element={<Reservation />} />
       </Routes>
       <Footer />
