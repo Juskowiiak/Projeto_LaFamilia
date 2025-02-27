@@ -1,14 +1,9 @@
-import { useState } from "react";
 import { Container } from "./style";
 
 export default function Reserva() {
   //declaracao de variaveis
   const mail = document.querySelector("#mail");
   const movel = document.querySelector("#movel");
-  const nome = document.querySelector("#nome");
-  const pessoa = document.querySelector("#pessoa");
-  const data = document.querySelector("#data");
-  const hora = document.querySelector("#hora");
 
   const formulario = (e) => {
     //a funcao só é submetida, caso der true em todas funcoes
@@ -17,6 +12,7 @@ export default function Reserva() {
     } else if (!checkMovel(movel)) {
       e.preventDefault();
     }
+    alert("Reserva Efectuada com Sucesso");
   };
   function checkMovel(dado) {
     //aceita apenas numeros
