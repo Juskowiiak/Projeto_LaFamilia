@@ -13,7 +13,7 @@ export default function Reservation() {
       <header>
         <div className="title">
           <h1>
-            Venha <span>comemorar </span>conosco !!
+            Ficamos a sua espera <span>!! </span>
           </h1>
         </div>
       </header>

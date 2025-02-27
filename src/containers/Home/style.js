@@ -1,7 +1,7 @@
 //importar biblioteca styled
 import styled from "styled-components";
 //importar imagem
-import backgroundPicture from "../../assets/home/back.png";
+import backgroundPicture from "../../assets/home/back.jpeg";
 import "../../Style/cores.css";
 import breakpoints from "../../Style/breakpoints";
 

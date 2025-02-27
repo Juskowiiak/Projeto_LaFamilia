@@ -4,7 +4,7 @@
     "tipo": "bebida",
     "nome": "Garrafa de água",
     "info": "",
-    "preco": 6.5,
+    "preco": 0.9,
     "picture": "./menu/bebidas/bebida1.jpg"
   },
   {
@@ -12,7 +12,7 @@
     "tipo": "bebida",
     "nome": "Refrigerantes",
     "info": "",
-    "preco": 6.5,
+    "preco": 1.2,
     "picture": "./menu/bebidas/bebida2.jpg"
   },
   {
@@ -20,7 +20,7 @@
     "tipo": "bebida",
     "nome": "Taça de Vinho",
     "info": "",
-    "preco": 6.5,
+    "preco": 1.45,
     "picture": "./menu/bebidas/bebida3.jpg"
   },
   {
@@ -28,7 +28,7 @@
     "tipo": "bebida",
     "nome": "Copo de cerveja",
     "info": "",
-    "preco": 6.5,
+    "preco": 1.2,
     "picture": "./menu/bebidas/bebida4.jpg"
   },
   {
@@ -36,7 +36,7 @@
     "tipo": "bebida",
     "nome": "Jarro de sangria",
     "info": "",
-    "preco": 6.5,
+    "preco": 2,
     "picture": "./menu/bebidas/bebida5.jpg"
   },
   {
@@ -44,7 +44,7 @@
     "tipo": "bebida",
     "nome": "Licor",
     "info": "",
-    "preco": 6.5,
+    "preco": 2.5,
     "picture": "./menu/bebidas/bebida6.jpg"
   },
   {
@@ -52,7 +52,7 @@
     "tipo": "entrada",
     "nome": "Aros de cebola",
     "info": "c/molho ketchup/maionese",
-    "preco": 6.5,
+    "preco": 3.5,
     "picture": "./menu/entrada/entrada1.jpg"
   },
   {
@@ -60,7 +60,7 @@
     "tipo": "entrada",
     "nome": "Chamuças",
     "info": "",
-    "preco": 6.5,
+    "preco": 4,
     "picture": "./menu/entrada/entrada2.jpg"
   },
   {
@@ -68,7 +68,7 @@
     "tipo": "entrada",
     "nome": "Gyozas de frango",
     "info": "",
-    "preco": 6.5,
+    "preco": 3.2,
     "picture": "./menu/entrada/entrada3.jpg"
   },
   {
@@ -76,7 +76,7 @@
     "tipo": "entrada",
     "nome": "Torradas com pate de atum",
     "info": "",
-    "preco": 6.5,
+    "preco": 3,
     "picture": "./menu/entrada/entrada4.jpg"
   },
   {
@@ -84,7 +84,7 @@
     "tipo": "entrada",
     "nome": "Canapes de salame",
     "info": "",
-    "preco": 6.5,
+    "preco": 4.2,
     "picture": "./menu/entrada/entrada5.jpg"
   },
   {
@@ -92,7 +92,7 @@
     "tipo": "grupo",
     "nome": "Pizza",
     "info": "Ananás, Barbecue, Atum, 4 Queijos...",
-    "preco": 6.5,
+    "preco": 12.5,
     "picture": "./menu/grupo/grupo1.jpg"
   },
   {
@@ -100,7 +100,7 @@
     "tipo": "grupo",
     "nome": "Nachos",
     "info": "Molho Cheddar ou Tomate",
-    "preco": 6.5,
+    "preco": 13.7,
     "picture": "./menu/grupo/grupo2.jpg"
   },
   {
@@ -108,7 +108,7 @@
     "tipo": "grupo",
     "nome": "Shrimp and Sausage Boil",
     "info": "Milho, Salsicha, Batata e Camarão cozidos",
-    "preco": 6.5,
+    "preco": 15,
     "picture": "./menu/grupo/grupo3.jpg"
   },
   {
@@ -116,7 +116,7 @@
     "tipo": "grupo",
     "nome": "Macaroni Cheese c/bacon",
     "info": "",
-    "preco": 6.5,
+    "preco": 12.2,
     "picture": "./menu/grupo/grupo4.jpg"
   },
   {
@@ -124,7 +124,7 @@
     "tipo": "prato",
     "nome": "Salmão grelhado",
     "info": "",
-    "preco": 6.5,
+    "preco": 8.5,
     "picture": "./menu/prato/prato1.jpg"
   },
   {
@@ -132,7 +132,7 @@
     "tipo": "prato",
     "nome": "Feijoada",
     "info": "",
-    "preco": 6.5,
+    "preco": 7.7,
     "picture": "./menu/prato/prato2.jpg"
   },
   {
@@ -140,7 +140,7 @@
     "tipo": "prato",
     "nome": "Jardineira de vitela",
     "info": "",
-    "preco": 6.5,
+    "preco": 8.3,
     "picture": "./menu/prato/prato3.jpg"
   },
   {
@@ -148,7 +148,7 @@
     "tipo": "prato",
     "nome": "Francesinha",
     "info": "",
-    "preco": 6.5,
+    "preco": 7,
     "picture": "./menu/prato/prato4.jpg"
   },
   {
@@ -156,7 +156,7 @@
     "tipo": "prato",
     "nome": "Esparguete a bolonhesa ",
     "info": "",
-    "preco": 6.5,
+    "preco": 6.2,
     "picture": "./menu/prato/prato5.jpg"
   },
   {
@@ -164,7 +164,7 @@
     "tipo": "prato",
     "nome": "Arroz de Polvo",
     "info": "",
-    "preco": 6.5,
+    "preco": 8.5,
     "picture": "./menu/prato/prato6.jpg"
   },
   {
@@ -172,7 +172,7 @@
     "tipo": "prato",
     "nome": "Arroz de Pato",
     "info": "",
-    "preco": 6.5,
+    "preco": 7.8,
     "picture": "./menu/prato/prato7.jpg"
   },
   {
@@ -180,7 +180,7 @@
     "tipo": "prato",
     "nome": "Puré c/almôndega",
     "info": "",
-    "preco": 6.5,
+    "preco": 6.2,
     "picture": "./menu/prato/prato8.jpg"
   },
   {
@@ -196,7 +196,7 @@
     "tipo": "prato",
     "nome": "Caril de frango",
     "info": "",
-    "preco": 6.5,
+    "preco": 7,
     "picture": "./menu/prato/prato10.jpg"
   },
   {
@@ -212,7 +212,7 @@
     "tipo": "sobremesa",
     "nome": "Mousse de oreo",
     "info": "",
-    "preco": 6.5,
+    "preco": 4.5,
     "picture": "./menu/sobremesa/sobremesa2.jpg"
   },
   {
@@ -220,7 +220,7 @@
     "tipo": "sobremesa",
     "nome": "Salada de frutas",
     "info": "",
-    "preco": 6.5,
+    "preco": 3.7,
     "picture": "./menu/sobremesa/sobremesa3.jpg"
   },
   {
@@ -228,7 +228,7 @@
     "tipo": "sobremesa",
     "nome": "Pudim",
     "info": "de leite condensado",
-    "preco": 6.5,
+    "preco": 3,
     "picture": "./menu/sobremesa/sobremesa4.jpg"
   },
   {
@@ -236,7 +236,7 @@
     "tipo": "sobremesa",
     "nome": "Tarte de lima",
     "info": "",
-    "preco": 6.5,
+    "preco": 4.2,
     "picture": "./menu/sobremesa/sobremesa5.jpg"
   }
 ]

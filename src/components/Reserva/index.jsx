@@ -12,21 +12,9 @@ export default function Reserva() {
 
   const formulario = (e) => {
     //a funcao só é submetida, caso der true em todas funcoes
-    if (nome.value == "") {
-      alert("Nome: espaço em branco");
-      e.preventDefault();
-    } else if (!checkMail(mail)) {
+    if (!checkMail(mail)) {
       e.preventDefault();
     } else if (!checkMovel(movel)) {
-      e.preventDefault();
-    } else if (pessoa.value == "") {
-      alert("Pessoa: espaço em branco");
-      e.preventDefault();
-    } else if (data.value == "") {
-      alert("Data: espaço em branco");
-      e.preventDefault();
-    } else if (hora.value == "") {
-      alert("Hora: espaço em branco");
       e.preventDefault();
     }
   };
@@ -74,6 +62,7 @@ export default function Reserva() {
             <input
               type="text"
               id="nome"
+              required
               maxLength={25}
               placeholder="Introduza seu nome"
               name="Reservado por"
@@ -84,6 +73,7 @@ export default function Reserva() {
             <input
               type="email"
               id="mail"
+              required
               placeholder="Introduza seu email"
               name="email"
             ></input>
@@ -93,6 +83,7 @@ export default function Reserva() {
             <input
               type="tel"
               id="movel"
+              required
               maxLength={9}
               placeholder="Introduza seu nº"
             ></input>
@@ -105,6 +96,7 @@ export default function Reserva() {
               type="number"
               id="pessoa"
               max={20}
+              required
               maxLength={2}
               placeholder="nº de pessoas"
               name="Pessoas convidadas"
@@ -115,6 +107,7 @@ export default function Reserva() {
             <input
               type="date"
               id="data"
+              required
               min={"2025-02-24"}
               max={"2025-09-02"}
               placeholder="Introduza a data"
@@ -126,6 +119,7 @@ export default function Reserva() {
             <input
               type="time"
               id="hora"
+              required
               min="11:00"
               max="23:00"
               placeholder="Introduza a hora"
@@ -133,11 +127,8 @@ export default function Reserva() {
             ></input>
           </li>
         </ul>
-        <input
-          type="hidden"
-          name="_next"
-          value="http://localhost:5174/marcacao"
-        ></input>
+
+        <input type="hidden" name="_captcha" value="false"></input>
         {/*ambos os emails empresa/cliente irao receber a notificaçao da reserva */}
         <input type="hidden" name="_autoresponse" value="Notificação"></input>
         <input className="botao" type="submit" value={"Enviar"} />

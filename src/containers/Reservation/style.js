@@ -3,7 +3,7 @@ import styled from "styled-components";
 import "../../Style/cores.css";
 import breakpoints from "../../Style/breakpoints";
 //importar imagem
-
+import back from "../../assets/reservation/back.jpeg";
 export const Container = styled.div`
   width: 100%;
   height: 100%;
@@ -14,7 +14,7 @@ export const Container = styled.div`
     height: 90vh;
     position: relative;
     margin-bottom: 8rem;
-
+    background-image: url(${back});
     background-size: cover;
     background-position: 100% 50%;
     display: flex;
@@ -29,7 +29,7 @@ export const Container = styled.div`
       top: 0;
       left: 0;
       background-color: #000;
-      opacity: 0.9;
+      opacity: 0.94;
     }
     .title {
       position: relative;
