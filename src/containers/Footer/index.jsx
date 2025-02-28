@@ -41,7 +41,7 @@ export default function Footer() {
               <span>Telefone:</span> +351 123 456 789
             </p>
             <p>
-              <span>Email:</span> lafamiliafood@gmail.com
+              <span>Email:</span> lafamilia_restaurant@hotmail.com
             </p>
           </div>
         </li>
