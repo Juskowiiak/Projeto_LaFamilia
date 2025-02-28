@@ -45,7 +45,7 @@ export default function Reserva() {
       <form
         onSubmit={formulario}
         method="POST"
-        action={`https://formsubmit.co/lafamilia_restaurant@hotmail.com`}
+        action={`https://formsubmit.co/321754979d0896a0c77e351502fa0599`}
         target="_blank"
       >
         {/* titulo do email */}

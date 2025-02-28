@@ -65,6 +65,7 @@ export const Container = styled.div`
     transition: 0.4s;
     border: 1px solid var(--dark-5);
     text-align: center;
+
     &:hover {
       background-color: var(--dark-3);
       border: 1px solid var(--gold-2);
