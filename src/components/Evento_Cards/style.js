@@ -128,6 +128,12 @@ export const Container = styled.div`
       }
     }
   }
+  .seta {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
   @media ${breakpoints.ml} {
     width: 95%;
   }

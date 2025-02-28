@@ -1,7 +1,7 @@
 import { Container } from "./style";
 //importar icons
 import { HiBadgeCheck } from "react-icons/hi";
-
+import { IoIosArrowRoundForward } from "react-icons/io";
 //importar ficheiro json
 import eventos from "../../Api/eventos.json";
 export default function EventoCards() {
@@ -42,6 +42,9 @@ export default function EventoCards() {
             ))}
         </ul>
       </div>
+      <p className="seta">
+        Arraste <IoIosArrowRoundForward />
+      </p>
     </Container>
   );
 }

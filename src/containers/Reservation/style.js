@@ -29,7 +29,7 @@ export const Container = styled.div`
       top: 0;
       left: 0;
       background-color: #000;
-      opacity: 0.85;
+      opacity: 0.78;
     }
     .title {
       position: relative;
