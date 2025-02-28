@@ -1,10 +1,11 @@
+import { useState } from "react";
 import { Container } from "./style";
 
 export default function Reserva() {
   //declaracao de variaveis
   const mail = document.querySelector("#mail");
   const movel = document.querySelector("#movel");
-
+  const [chave, setChave] = useState("");
   const formulario = (e) => {
     //a funcao só é submetida, caso der true em todas funcoes
     if (!checkMail(mail)) {
@@ -12,6 +13,7 @@ export default function Reserva() {
     } else if (!checkMovel(movel)) {
       e.preventDefault();
     }
+    setChave(mail.value);
     alert("Reserva Efectuada com Sucesso");
   };
   function checkMovel(dado) {
@@ -38,11 +40,12 @@ export default function Reserva() {
 
   return (
     <Container>
+      {/* usei o formsubmit.co para enviar o email */}
       {/* este formulario irá para o mail da empresa */}
       <form
         onSubmit={formulario}
         method="POST"
-        action={`https://formsubmit.co/juskoh_96@hotmail.com`}
+        action={`https://formsubmit.co/lafamilia_restaurant@hotmail.com`}
         target="_blank"
       >
         {/* titulo do email */}
@@ -124,7 +127,6 @@ export default function Reserva() {
           </li>
         </ul>
 
-        <input type="hidden" name="_captcha" value="false"></input>
         {/*ambos os emails empresa/cliente irao receber a notificaçao da reserva */}
         <input type="hidden" name="_autoresponse" value="Notificação"></input>
         <input className="botao" type="submit" value={"Enviar"} />
